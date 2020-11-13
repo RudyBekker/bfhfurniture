@@ -1,0 +1,3400 @@
+<!doctype html >
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en"
+      class="">
+<head>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    window._currentDevice = 'desktop';
+    window.Parameters = window.Parameters || {
+        AjaxContainer: 'div.dmBody',
+        WrappingContainer: 'div.dmOuter',
+        HomeUrl: 'https://www.bfhfurniture.co.za/',
+        AccountUUID: '6850ac2082cd460ea9f85369fb846cf9',
+        SystemID: 'US_DIRECT_PRODUCTION',
+        SiteAlias: '4a53ae05',
+        SiteId: '1902121',
+        SiteType: atob('RFVEQU9ORQ=='),
+        ExternalUid: null,
+        IsSiteMultilingual: false,
+        InitialPostAlias: '',
+        InitialDynamicItem: '',
+        InitialPageAlias: 'store',
+        InitialEncodedPageAlias: 'c3RvcmU=',
+        CurrentPageUrl: '',
+        IsCurrentHomePage: false,
+        AllowAjax: true,
+        AfterAjaxCommand: null,
+        HomeLinkText: 'Back To Home',
+        UseGalleryModule: false,
+        CurrentThemeName: 'Layout Theme',
+        ThemeVersion: '1750',
+        DefaultPageAlias: '',
+        RemoveDID: true,
+        WidgetStyleID : null,
+        IsHeaderFixed: false,
+        IsHeaderSkinny: false,
+        IsBfs: true,
+        LayoutParams : {
+            _navigationAnimationStyle: 'slide',
+            _manifestId : 10600,
+            _device : 'desktop'
+        },
+        StorePageAlias: 'store',
+        StorePath: '/store',
+        StoreId: '36992043',
+        StoreVersion: 2,
+        StoreBaseUrl: '/store',
+        StoreCleanUrl: true,
+        StoreDisableScrolling: true,
+        NotificationSubDomain: 'bfhfurniture29bb6354',
+        HasCustomDomain: true,
+        showCookieNotification: false,
+        cookiesNotificationMarkup: 'null',
+        translatedPageUrl: '',
+        isFastMigrationSite: false,
+        sidebarPosition: 'NA',
+        currentLanguage: 'en',
+        NavItems: 'W3sidGl0bGUiOiJIT01FIiwiYWxpYXMiOiJob21lIiwicGF0aCI6Ii8iLCJpbk5hdmlnYXRpb24iOnRydWUsInN1Yk5hdiI6W119LHsidGl0bGUiOiJTVE9SRSIsImFsaWFzIjoic3RvcmUiLCJwYXRoIjoiL3N0b3JlIiwiaW5OYXZpZ2F0aW9uIjp0cnVlLCJzdWJOYXYiOltdfSx7InRpdGxlIjoiU1BFQ0lBTFMiLCJhbGlhcyI6InNwZWNpYWxzIiwicGF0aCI6Ii9zcGVjaWFscyIsImluTmF2aWdhdGlvbiI6dHJ1ZSwic3ViTmF2IjpbXX0seyJ0aXRsZSI6IkFCT1VUIiwiYWxpYXMiOiJhYm91dCIsInBhdGgiOiIvYWJvdXQiLCJpbk5hdmlnYXRpb24iOnRydWUsInN1Yk5hdiI6W119LHsidGl0bGUiOiJDT05UQUNUIiwiYWxpYXMiOiJjb250YWN0IiwicGF0aCI6Ii9jb250YWN0IiwiaW5OYXZpZ2F0aW9uIjp0cnVlLCJzdWJOYXYiOltdfV0=',
+        errors: {
+            general: 'There was an error connecting to the page.<br/> Make sure you are not offline.',
+            password: 'Incorrect name/password combination',
+            tryAgain: 'Try again'
+        },
+        NavigationAreaParams: {
+            ShowBackToHomeOnInnerPages: true,
+            NavbarSize: 4,
+            NavbarLiveHomePage: 'https://www.bfhfurniture.co.za/',
+            BlockContainerSelector: '.dmBody',
+            NavbarSelector: '#dmNav:has(a)',
+            SubNavbarSelector: '#subnav_main'
+        },
+        hasCustomCode: true,
+        planID: 9,
+        disableTracking: false
+    };
+
+    window.Parameters.LayoutID = {};
+    window.Parameters.LayoutID[window._currentDevice] = 6;
+    window.Parameters.LayoutVariationID = {};
+    window.Parameters.LayoutVariationID[window._currentDevice] = 5;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Injecting site-wide to the head -->
+
+
+
+<!-- End Injecting site-wide to the head -->
+
+<!-- ========= Meta Tags ========= -->
+<!-- PWA settings -->
+<script>
+    function toHash(str) {
+        var hash = 5381, i = str.length;
+        while (i) {
+            hash = hash * 33 ^ str.charCodeAt(--i)
+        }
+        return hash >>> 0
+    }
+</script>
+<script>
+    (function(global) {
+    //const cacheKey = global.cacheKey;
+    const isOffline = 'onLine' in navigator && navigator.onLine === false;
+    const hasServiceWorkerSupport = 'serviceWorker' in navigator;
+    if (isOffline) {
+        console.log('offline mode');
+    }
+    if (!hasServiceWorkerSupport) {
+        console.log('service worker is not supported');
+    }
+    if (hasServiceWorkerSupport && !isOffline) {
+        window.addEventListener('load', function() {
+            const serviceWorkerPath = '/runtime-service-worker.js?v=2';
+            navigator.serviceWorker
+                .register(serviceWorkerPath, { scope: './' })
+                .then(
+                    function(registration) {
+                        // Registration was successful
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    },
+                    function(err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    }
+                )
+                .catch(function(err) {
+                    console.log(err);
+                });
+        });
+
+        // helper function to refresh the page
+        var refreshPage = (function() {
+            var refreshing;
+            return function() {
+                if (refreshing) return;
+                // prevent multiple refreshes
+                var refreshkey = 'refreshed' + location.href;
+                var prevRefresh = localStorage.getItem(refreshkey);
+                if (prevRefresh) {
+                    localStorage.removeItem(refreshkey);
+                    if (Date.now() - prevRefresh < 30000) {
+                        return; // dont go into a refresh loop
+                    }
+                }
+                refreshing = true;
+                localStorage.setItem(refreshkey, Date.now());
+                console.log('refereshing page');
+                window.location.reload();
+            };
+        })();
+
+        function messageServiceWorker(data) {
+            return new Promise(function(resolve, reject) {
+                if (navigator.serviceWorker.controller) {
+                    var worker = navigator.serviceWorker.controller;
+                    var messageChannel = new MessageChannel();
+                    messageChannel.port1.onmessage = replyHandler;
+                    worker.postMessage(data, [messageChannel.port2]);
+                    function replyHandler(event) {
+                        resolve(event.data);
+                    }
+                } else {
+                    resolve();
+                }
+            });
+        }
+    }
+})(window);
+</script>
+<!-- Add manifest -->
+<!-- End PWA settings -->
+
+
+<meta http-equiv="Content-type" content="text/html;charset=utf-8">
+<meta charset="utf-8">
+
+<link rel="canonical" href="3-4-Mattress-Protector-p237280612.html">
+
+<meta id="view" name="viewport"
+      content=", initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, viewport-fit=cover"/>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!--Add favorites icons-->
+
+<link rel="apple-touch-icon" href="https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/Untitled+design.png"/>
+
+<link rel="icon" type="image/x-icon" href="https://irp-cdn.multiscreensite.com/4a53ae05/site_favicon_16_1601454727422.ico"/>
+
+<!-- End favorite icons -->
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preconnect" href="https://lirp-cdn.multiscreensite.com/" crossorigin />
+
+
+<!-- Prefetch Ecwid Javascript to speed up loading -->
+<link rel="prefetch" href="https://app.multiscreenstore.com/script.js?36992043"></link>
+
+
+<!-- render the required CSS and JS in the head section -->
+<script>
+    window.SystemID = 'US_DIRECT_PRODUCTION';
+
+    if(!window.dmAPI) {
+        window.dmAPI = {
+            registerExternalRuntimeComponent: function() {
+            },
+            getCurrentDeviceType: function() {
+                return window._currentDevice;
+            }
+        };
+    }
+
+    if (!window.requestIdleCallback) {
+        window.requestIdleCallback = function (fn) {
+            setTimeout(fn, 0);
+        }
+    }
+
+    function loadCSS(link) {
+        try {
+            var urlParams = new URLSearchParams(window.location.search);
+            var noCSS = !!urlParams.get('nocss');
+            var cssTimeout = urlParams.get('cssTimeout') || 0;
+
+            if (noCSS) {
+                return;
+            }
+            requestIdleCallback(function () {
+                window.setTimeout(function () {
+                    link.onload = null;
+                    link.rel = 'stylesheet';
+                    link.type = 'text/css'
+                }, parseInt(cssTimeout, 10));
+            });
+        } catch (e) {/* Never fail - this is just a tool for measurements */}
+    }
+
+</script>
+<script>
+(function(n){"use strict";if(!n.l){n.l=function(){}}var o=loadCSS.t={};o.o=function(){var l;try{l=n.document.createElement("link").relList.supports("preload")}catch(e){l=false}return function(){return l}}();o.i=function(e){var l=e.media||"all";function enableStylesheet(){if(e.addEventListener){e.removeEventListener("load",enableStylesheet)}else if(e.attachEvent){e.detachEvent("onload",enableStylesheet)}e.setAttribute("onload",null);e.media=l}if(e.addEventListener){e.addEventListener("load",enableStylesheet)}else if(e.attachEvent){e.attachEvent("onload",enableStylesheet)}setTimeout(function(){e.rel="stylesheet";e.media="only x"});setTimeout(enableStylesheet,3e3)};o.s=function(){if(o.o()){return}var e=n.document.getElementsByTagName("link");for(var l=0;l<e.length;l++){var t=e[l];if(t.rel==="preload"&&t.getAttribute("as")==="style"&&!t.getAttribute("data-loadcss")){t.setAttribute("data-loadcss",true);o.i(t)}}};if(!o.o()){o.s();var e=n.setInterval(o.s,500);if(n.addEventListener){n.addEventListener("load",function(){o.s();n.clearInterval(e)})}else if(n.attachEvent){n.attachEvent("onload",function(){o.s();n.clearInterval(e)})}}if(typeof exports!=="undefined"){exports.l=loadCSS}else{n.l=loadCSS}})(typeof global!=="undefined"?global:this);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Google Fonts Include -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CCardo:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CPlayfair+Display:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CLato:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CSource+Sans+Pro:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7COpen+Sans:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CPlayball:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic%7CSource+Sans+Pro:100,200,300,400,500,600,700,800,900,100italic,200italic,300italic,400italic,500italic,600italic,700italic,800italic,900italic&amp;subset=latin-ext&amp;display=swap"  />
+
+
+<link rel="stylesheet" type="text/css" href="https://static-cdn.multiscreensite.com/mnlt/production/1476/_dm/s/rt/dist/css/css-font-package-v2.min.css" />
+
+
+
+<!-- RT CSS Include d-css-runtime-desktop-one-package-new-->
+<link rel="stylesheet" type="text/css" href="https://static-cdn.multiscreensite.com/mnlt/production/1476/_dm/s/rt/dist/css/d-css-runtime-desktop-one-package-new.min.css" />
+
+<!-- End of RT CSS Include -->
+
+
+
+    
+       <link type="text/css" rel="stylesheet" href="https://irp-cdn.multiscreensite.com/WIDGET_CSS/production_1476/e2037be59de48face2aebca55f44f656.css" id="widgetCSS" />
+    
+
+
+
+<!-- This is populated in Ajax navigation -->
+<style id="pageAdditionalWidgetsCss" type="text/css">
+</style>
+
+
+
+
+<!-- Site CSS -->
+<link type="text/css" rel="stylesheet" href="https://irp-cdn.multiscreensite.com/4a53ae05/files/4a53ae05_1.min.css?v=35" id="siteGlobalCss" />
+
+
+<style id="customWidgetStyle" type="text/css">.widget-7b2ba5 * {
+    margin:  0;
+}
+
+.widget-7b2ba5 ul{
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.widget-7b2ba5 .nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.widget-7b2ba5 .nav.reverse-tabs-direction {
+    flex-direction: row-reverse;
+}
+
+.widget-7b2ba5 .text {
+    display:inline;
+}
+
+
+
+
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+/********************    tab-labels       ************************************************************************/
+
+
+.widget-7b2ba5 .tab-label {
+    text-align: center !important;
+}
+
+.widget-7b2ba5 .tab-label.layout-a.not-active>h4 {
+    text-align: center !important;
+}
+
+.widget-7b2ba5 .tab-label {
+    flex: 1 1 0%;
+}
+
+.widget-7b2ba5 .tab-label .horizontal-label {
+    margin: 18px;
+}
+
+/*****************************************   tab-labels layout-a    ************************************/
+.widget-7b2ba5 .tab-label.layout-a.not-active {
+  border-bottom: 1px solid #ededed;
+  text-align: center !important;
+  font-weight: normal !important;
+  color: #878787 !important;
+}
+
+.widget-7b2ba5 .tab-label.not-active.layout-a>h4 {
+    font-weight: normal !important;
+    color: #878787 !important;
+}
+
+.widget-7b2ba5 .tab-label.layout-a.hover, .widget-7b2ba5 .tab-label.active.layout-a {
+    border-bottom: 3px solid #313131;
+    font-weight: bold !important;
+    color: #000000 !important;
+}
+
+.widget-7b2ba5 .tab-label.hover.layout-a>h4, .widget-7b2ba5 .tab-label.active.layout-a>h4{
+    font-weight: bold !important;
+    color: #000000 !important;
+}
+
+
+/*****************************************   tab-labels layout-b    ************************************/
+.widget-7b2ba5 .tab-label.layout-b.not-active {
+  text-align: center !important;
+  background-color: #ffffff;
+  color: #878787 !important;
+}
+
+.widget-7b2ba5 .tab-label.layout-b.not-active>h4 {
+  color: #878787 !important;
+}
+
+.widget-7b2ba5 .tab-label.layout-b.hover, .widget-7b2ba5 .tab-label.active.layout-b {
+    background-color: #f5f5f5;
+    color: #000000 !important;
+}
+
+.widget-7b2ba5 .tab-label.layout-b.hover, .widget-7b2ba5 .tab-label.active.layout-b>h4 {
+    color: #000000 !important;
+}
+
+
+/*****************************************   tab-labels layout-c    ************************************/
+.widget-7b2ba5 .tab-label.layout-c {
+  border-left: 1px solid #d9d8d8;
+  border-top: 1px solid #d9d8d8;
+  border-right: 1px solid #d9d8d8;
+}
+
+.widget-7b2ba5 .tab-label.layout-c:last-child {
+  /*border-right: 1px solid #d9d8d8;*/
+}
+
+.widget-7b2ba5 .tab-label.layout-c.not-active {
+  text-align: center !important;
+  border-bottom: none;
+  background-color: rgba(0,0,0,0);
+  font-weight: normal !important;
+  color: #878787 !important;
+}
+
+
+.widget-7b2ba5 .tab-label.not-active.layout-c>h4 {
+    font-weight: normal !important;
+    color: #878787 !important;
+}
+
+
+.widget-7b2ba5 .tab-label.layout-c.hover, .widget-7b2ba5 .tab-label.active.layout-c {
+    background-color: rgba(0,0,0,0);
+    font-weight: bold !important;
+    color: #000000 !important;
+}
+
+.widget-7b2ba5 .tab-label.layout-c.hover>h4, .widget-7b2ba5 .tab-label.active.layout-c>h4 {
+    font-weight: bold !important;
+    color: #000000 !important;
+}
+
+
+/*****************************************   tab-labels layout-d   D E P R E C A T E D  ! !  ************************************/
+.widget-7b2ba5 .tab-label.layout-d.not-active {
+  text-align: center !important;
+  background-color: #f5f5f5;
+  color: #000000;
+  font-weight: bold;
+}
+
+.widget-7b2ba5 .tab-label.layout-d.hover, .widget-7b2ba5 .tab-label.active.layout-d {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+/*****************************************   tab-labels layout-e    ************************************/
+.widget-7b2ba5 .tab-label.layout-e.not-active {
+  text-align: left !important;
+  background-color: rgba(0,0,0,0);
+  color: #878787 !important;
+  font-weight: bold !important;
+  border-right: 3px solid #ededed;
+}
+
+.widget-7b2ba5 .tab-label.layout-e.not-active>h4 {
+  color: #878787 !important;
+  font-weight: bold !important;
+}
+
+.widget-7b2ba5 .tab-label.layout-e.hover, .widget-7b2ba5 .tab-label.active.layout-e {
+    color: #000000;
+    border-right: 3px solid #000000;
+    text-align: left !important;
+    font-weight: bold !important;
+}
+
+.widget-7b2ba5 .tab-label.layout-e.hover>h4, .widget-7b2ba5 .tab-label.active.layout-e>h4 {
+    color: #000000 !important;
+    font-weight: bold !important;
+}
+
+
+/**************    E N D   O F    |    tab-labels     ***************************************************************/
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+
+
+
+
+
+
+
+/*******************************************************************************************************************/
+/******************************************************************************************************************/
+/********************    tabs       ******************************************************************************/
+
+
+.widget-7b2ba5 .tab.active {
+    display: flex;    
+}
+
+.widget-7b2ba5 .tab {
+    display: none;
+    text-align: left !important;
+    flex: 1 1 0%;
+    flex-basis: auto;
+    justify-content: space-around;
+    align-content: flex-start;
+    padding-top: 30px;
+    max-width: 100%;
+}
+
+
+/*****************************************   tab layout-a    ************************************/
+.widget-7b2ba5 .tab.layout-a {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+
+/*****************************************   tab layout-b    ************************************/
+.widget-7b2ba5 .tab.layout-b {
+    background-color: #f5f5f5;
+}
+
+
+/*****************************************   tab layout-c    ************************************/
+.widget-7b2ba5 .tab.layout-c {
+    background-color: rgba(0,0,0,0);
+    border: 1px solid #d9d8d8;
+}
+
+
+/****************************   tab layout-d    D E P R E C A T E D  ! !************************/
+.widget-7b2ba5 .tab.layout-d {
+    flex-direction: column;
+}
+
+
+
+
+
+
+.widget-7b2ba5 .tab.full-width-img  {
+    flex-direction: column;
+}
+
+/*for text-img reverse functionality*/
+.widget-7b2ba5 .tab .image-container, .widget-7b2ba5 .tab.reverse .tab-text-container  {
+    order: 1;
+}
+
+.widget-7b2ba5 .tab.reverse .image-container, .widget-7b2ba5 .tab .tab-text-container  {
+    order: 3;
+}
+
+
+.widget-7b2ba5 .tab .image-container {
+   background-position : center;
+   background-size: cover;
+   max-width: 100%;
+}
+
+.widget-7b2ba5 .tab.full-width-img .image-container {
+    width: 100% !important;
+}
+
+.widget-7b2ba5 .tab .image-container .image {
+  margin: 0 auto;
+  visibility: hidden;
+  width: 100%;
+}
+
+.widget-7b2ba5 .tab .tab-text-container {
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    /*align-items: flex-start;*/
+    justify-content: center;
+}
+
+.widget-7b2ba5 .tab .tab-text-container .tab-description {
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+    text-align:  left !important;
+}
+
+/*****************************************************************************************************************/
+/**************    E N D   O F    |    tabs     ****************************************************************/
+/***************************************************************************************************************/
+
+.widget-7b2ba5 .btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.widget-7b2ba5 .btn-container.reverse-btn-dir {
+    align-items: flex-end;
+}
+
+
+.widget-7b2ba5 .button-class {
+    margin-bottom: 0 !important;
+    max-width: 100%;
+}
+
+.widget-7b2ba5 .button-class span.text {
+    color: red;
+    overflow-wrap: initial !important;
+    margin-bottom: 0px;
+    padding: 10px 20px !important; /*for button to look like in img slider*/
+}
+    
+    /*user agent h tags margin reseting*/
+.widget-7b2ba5 h1, .widget-7b2ba5 h2, .widget-7b2ba5 h3, .widget-7b2ba5 h4, .widget-7b2ba5 h5, .widget-7b2ba5 h6, .widget-7b2ba5 .text {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+
+.widget-7b2ba5 .text {
+  max-width: 100% !important;
+}
+
+.widget-7b2ba5 .wrapper {
+    overflow: hidden;
+    display: flex;
+}
+
+.widget-7b2ba5 .wrapper.layout-a, .widget-7b2ba5 .wrapper.layout-b, .widget-7b2ba5 .wrapper.layout-c, .widget-7b2ba5 .wrapper.layout-d{
+    flex-direction: column;
+}
+
+.widget-7b2ba5 .wrapper.layout-e {
+    flex-direction: row;
+}
+
+.widget-7b2ba5 .wrapper.layout-e .nav {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.widget-7b2ba5 .wrapper.layout-e .nav.reverse-tabs-direction {
+    flex-direction: column-reverse;
+}
+
+.widget-7b2ba5 .tab-label {
+    flex: 1 1 0%;
+    overflow: hidden;
+    overflow-wrap: break-word;
+}
+
+/*.widget-7b2ba5 .tab-label.layout-e .horizontal-label {*/
+/*    margin: 5px 25px;*/
+/*    margin-left: 0px;*/
+/*}*/
+
+
+
+
+.widget-7b2ba5 .tab-label.layout-e {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.widget-7b2ba5 .tab-label.layout-e.layout-e-aux-tab-label{
+    border-right: 3px solid #ededed;
+    cursor: auto; 
+}
+
+/*was: .widget-7b2ba5 .tab.internal-padding*/
+.widget-7b2ba5 .tab {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.widget-7b2ba5 .tab .tab-space {
+    order: 2;
+    flex-basis: 20px;
+}
+
+.widget-7b2ba5 .tab .tab-text-container .desc-title {
+    font-weight: bold;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/*.widget-7b2ba5 .tab.layout-e .internal-padding*/
+.widget-7b2ba5 .tab.layout-e {
+    padding: 0px 21px;
+}
+
+.widget-7b2ba5 .tab .image-container{
+    width: 240px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.widget-7b2ba5 .tab .image-container.layout-a {
+    width: 387px;
+    height: 292px;
+}
+
+.widget-7b2ba5 .tab .image-container.layout-b {
+    width: 291px;
+    height: 353px;
+}
+
+.widget-7b2ba5 .tab .image-container.layout-e {
+    width: 196px;
+    height: 251px;
+}
+
+.widget-7b2ba5 .tab .image-container.layout-c {
+    width: 514px;
+    height: 278px;
+}
+
+.widget-7b2ba5 .tab .image-container.layout-d {
+    width: 100%;
+    margin: 0px 0px;
+    margin-left: 0px;
+}
+
+.widget-7b2ba5 .button-class {
+  width: auto !important;
+  margin-top: 15px !important;
+}
+    
+</style>
+<style id="innerPagesStyle" type="text/css">
+    
+</style>
+
+<style id="additionalGlobalCss" type="text/css">
+</style>
+
+<style id="pagestyle" type="text/css">*#dm *.dmBody div.u_1156418759 *.cartIcon
+{
+	font-family:Roboto !important;
+}
+*#dm *.dmBody div.u_1156418759 *.cartItems
+{
+	font-family:Roboto !important;
+}
+*#dm *.dmBody *.u_1430326443 *.dmStoreSearchInput
+{
+	padding-left:18px !important;
+	padding-right:18px !important;
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1430326443 *.dmStoreSearchInput
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	border-bottom-width:1px !important;
+	border-bottom-style:solid !important;
+	color:rgba(51,51,51,1) !important;
+	border-bottom-color:rgba(208,209,211,1) !important;
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	border-radius:0 !important;
+	-moz-border-radius:0 !important;
+	-webkit-border-radius:0 !important;
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody *.u_1661522082 *.ecwid-productBrowser.ecwid-productBrowser-CategoryPage div.ecwid-productBrowser-productNameLink a
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody div.u_1661522082 *.grid-product__price-amount
+{
+	color:rgb(148,148,148) !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-details-qtyLabel
+{
+	color:rgba(34,34,34,1) !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-details-qtyTextField
+{
+	color:rgba(34,34,34,1) !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody *.u_1661522082 *.ecwid-btn--primary
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-sku
+{
+	color:rgba(34,34,34,1) !important;
+	font-weight:normal !important;
+	display:none !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-details div.ecwid-productBrowser-price
+{
+	color:rgb(148,148,148) !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-btn--secondary
+{
+	color:rgba(123,123,123,1) !important;
+	background-color:rgba(247,247,248,1) !important;
+	border-style:solid !important;
+	border-width:0 !important;
+	border-bottom-style:solid !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-btn--secondary:hover
+{
+	font-weight:normal !important;
+	color:rgba(255,255,255,1) !important;
+	background-color:rgba(208,209,211,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-btn--secondary.hover
+{
+	font-weight:normal !important;
+	color:rgba(255,255,255,1) !important;
+	background-color:rgba(208,209,211,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 div.ecwid-productBrowser-categoryPath
+{
+	border-color:rgba(223,224,225,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-CartPage *.ecwid-productBrowser-head
+{
+	border-color:rgba(223,224,225,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 table.ecwid-ProductsList-content
+{
+	border-color:rgba(223,224,225,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 div.ecwid-Invoice-cell-title
+{
+	border-color:rgba(223,224,225,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 td.ecwid-productBrowser-cart-itemsTable-cell
+{
+	border-color:rgba(223,224,225,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 td.ecwid-Invoice-itemsTable-cell-last
+{
+	border-color:rgba(223,224,225,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 td.ecwid-Invoice-itemsTable-cell
+{
+	border-color:rgba(223,224,225,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 tr.ecwid-productBrowser-cart-itemsTable-row-selected
+{
+	border-color:rgba(223,224,225,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 td.ecwid-productBrowser-cart-itemsTable-cell-selected
+{
+	border-color:rgba(223,224,225,1) !important;
+}
+*#dm *.dmBody *.u_1661522082 *.page-title__name
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody *.u_1661522082 *.ec-store__category-page *.page-title__name
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody *.u_1661522082 *.ec-store__category-page *.ec-page-title__name
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody div.u_1661522082 *.grid-category__title-inner
+{
+	font-weight:bold !important;
+	color:rgba(255,255,255,1) !important;
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-store__category-page .page-title__name
+{
+	font-family:'Playfair Display' !important;
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-store__category-page .ec-page-title__name
+{
+	font-family:'Playfair Display' !important;
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 *.grid-product__title-inner
+{
+	font-weight:bold !important;
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__price-value
+{
+	font-family:'Playfair Display' !important;
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 .pager *
+{
+	font-family:'Open Sans' !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-pager *
+{
+	font-family:'Open Sans' !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__buy-now .form-control__button
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	background-color:rgba(20,222,0,1) !important;
+	border-radius:50px !important;
+	-moz-border-radius:50px !important;
+	-webkit-border-radius:50px !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__buy-now .form-control__button .form-control__button-text
+{
+	font-family:'Open Sans' !important;
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__buy-now .form-control__button .form-control__button-text:hover
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__buy-now .form-control__button .form-control__button-text.hover
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__buy-now .form-control__button:hover span
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__buy-now .form-control__button.hover span
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button .form-control__button-text
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button .form-control__button-svg
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1661522082 .ecwid-btn--primary:hover
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .ecwid-btn--primary.hover
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button:hover
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button.hover
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .ecwid-btn--primary:hover .form-control__button-text
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .ecwid-btn--primary.hover .form-control__button-text
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button:hover .form-control__button-text
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button.hover .form-control__button-text
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1661522082 .ecwid-btn--primary
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	background-color:rgba(20,222,0,1) !important;
+	font-family:'Open Sans' !important;
+	border-radius:50px !important;
+	-moz-border-radius:50px !important;
+	-webkit-border-radius:50px !important;
+	box-shadow:rgba(0,0,0,0.25) 0 0 11px 0 !important;
+	-moz-box-shadow:rgba(0,0,0,0.25) 0 0 11px 0 !important;
+	-webkit-box-shadow:rgba(0,0,0,0.25) 0 0 11px 0 !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	background-color:rgba(20,222,0,1) !important;
+	border-radius:50px !important;
+	-moz-border-radius:50px !important;
+	-webkit-border-radius:50px !important;
+	box-shadow:rgba(0,0,0,0.25) 0 0 11px 0 !important;
+	-moz-box-shadow:rgba(0,0,0,0.25) 0 0 11px 0 !important;
+	-webkit-box-shadow:rgba(0,0,0,0.25) 0 0 11px 0 !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart *:not(select):not(option)
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .ec-link:not(.breadcrumbs__link)
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .ec-cart-next__text
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .ec-cart-item__options
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .ec-cart__cert
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody *.u_1661522082 .ec-cart .page-title__name
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .page-title__name
+{
+	font-family:'Playfair Display' !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody *.u_1661522082 .ec-cart .ec-link:not(.breadcrumbs__link)
+{
+	text-align:LEFT !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-breadcrumbs
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-breadcrumbs *
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody *.u_1661522082 .ec-breadcrumbs
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody *.u_1661522082 .ec-breadcrumbs *
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody *.u_1435141028:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1435141028.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1867297420
+{
+	box-shadow:none !important;
+	-moz-box-shadow:none !important;
+	-webkit-box-shadow:none !important;
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody div.u_1552723084 *.dmforminput label
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody *.u_1552723084 *.dmformsubmit
+{
+	float:none !important;
+	display:block !important;
+	margin-left:auto !important;
+	margin-right:auto !important;
+}
+*#dm *.dmBody div.u_1552723084 input:not([type="submit"])
+{
+	background-color:rgba(255,255,255,1) !important;
+	border-style:solid !important;
+	border-width:0 !important;
+}
+*#dm *.dmBody div.u_1552723084 textarea
+{
+	background-color:rgba(255,255,255,1) !important;
+	border-style:solid !important;
+	border-width:0 !important;
+}
+*#dm *.dmBody div.u_1552723084 select
+{
+	background-color:rgba(255,255,255,1) !important;
+	border-style:solid !important;
+	border-width:0 !important;
+}
+*#dm *.dmBody div.u_1435141028:before
+{
+	background-color:rgba(29,29,28,1) !important;
+	opacity:0.54 !important;
+}
+*#dm *.dmBody div.u_1435141028.before
+{
+	background-color:rgba(29,29,28,1) !important;
+	opacity:0.54 !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmformsubmit
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	background-color:rgba(20,222,0,1) !important;
+	border-radius:50px !important;
+	-moz-border-radius:50px !important;
+	-webkit-border-radius:50px !important;
+}
+*#dm *.dmBody div.u_1552723084 input[type="submit"]
+{
+	font-family:'Open Sans' !important;
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmform-success
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.dmform-error
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmform-success .rteBlock
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.dmform-error .rteBlock
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput label:not(.for-checkable):not(.custom-contact-checkable)
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1552723084 .m-recaptcha
+{
+	font-family:'Playfair Display' !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput input
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput textarea
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput .fileUploadLink
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1552723084 .checkboxwrapper span
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1552723084 .radiowrapper span
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1552723084 .optinwrapper div
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1552723084 .freetextwrapper
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput select
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput option
+{
+	font-family:'Open Sans' !important;
+}
+*#dm *.dmBody div.u_1435141028
+{
+	background-color:rgba(255,255,255,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:url(https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/meng-ji-n38db0fhuZk-unsplash.jpg) !important;
+}
+*#dm *.dmBody div.u_1124575650
+{
+	background-color:rgba(238,238,238,1) !important;
+}
+*#dm *.dmBody *.u_1678698512:before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody *.u_1678698512.before
+{
+	opacity:0.5 !important;
+	background-color:rgb(255,255,255) !important;
+}
+*#dm *.dmBody div.u_1476057532
+{
+	background-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody div.u_1678698512
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/fezbot2000-B-wYmhZGIsw-unsplash.jpg) !important;
+}
+*#dm *.dmBody div.u_1678698512:before
+{
+	background-color:rgba(90,90,90,1) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1678698512.before
+{
+	background-color:rgba(90,90,90,1) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1678698512>.bgExtraLayerOverlay
+{
+	background-color:rgba(90,90,90,1) !important;
+	opacity:0.2 !important;
+}
+*#dm *.dmBody div.u_1339778186 hr
+{
+	color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-size .ec-store .grid__categories--appearance-hover .grid-category__wrap-inner:hover .grid-category__shadow
+{
+	background-color:rgba(90,90,90,0.7) !important;
+	background-image:none !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-size .ec-store .grid__categories--appearance-hover .grid-category__wrap-inner.hover .grid-category__shadow
+{
+	background-color:rgba(90,90,90,0.7) !important;
+	background-image:none !important;
+}
+*#dm *.dmBody div.u_1394865387
+{
+	background-color:rgba(255,255,255,1) !important;
+}
+*#dm *.dmBody div.u_1041075399 .tab-label.not-active>h4
+{
+	font-family:'Playfair Display' !important;
+	color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1041075399 .tab-label.not-active
+{
+	border-bottom-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.active>h4
+{
+	color:rgba(0,0,0,1) !important;
+	font-family:'Playfair Display' !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.hover>h4
+{
+	color:rgba(0,0,0,1) !important;
+	font-family:'Playfair Display' !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.active>h4>span
+{
+	color:rgba(0,0,0,1) !important;
+	font-family:'Playfair Display' !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.hover>h4>span
+{
+	color:rgba(0,0,0,1) !important;
+	font-family:'Playfair Display' !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.active
+{
+	border-bottom-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.hover
+{
+	border-bottom-color:rgba(0,0,0,1) !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab *.desc-title
+{
+	color:rgba(90,90,90,1) !important;
+	font-family:'Playfair Display' !important;
+	font-style:normal !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab *.tab-description>p
+{
+	color:rgba(0,0,0,1) !important;
+	font-family:'Playfair Display' !important;
+	font-weight:normal !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	border-color:rgba(0,0,0,0) !important;
+}
+*#dm *.dmBody div.u_1041075399 .active .button-class
+{
+	border-style:solid !important;
+	border-width:0 !important;
+	background-color:rgba(20,222,0,1) !important;
+	border-radius:50px !important;
+	-moz-border-radius:50px !important;
+	-webkit-border-radius:50px !important;
+	box-shadow:rgba(90,90,90,1) 0 0 11px 0 !important;
+	-moz-box-shadow:rgba(90,90,90,1) 0 0 11px 0 !important;
+	-webkit-box-shadow:rgba(90,90,90,1) 0 0 11px 0 !important;
+}
+*#dm *.dmBody div.u_1041075399 .active .button-class span.text
+{
+	font-family:'Open Sans' !important;
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1041075399 .active .button-class:hover span.text
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody div.u_1041075399 .active .button-class.hover span.text
+{
+	font-weight:bold !important;
+}
+*#dm *.dmBody *.u_1041075399 *.tab-label.active>h4
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody *.u_1041075399 *.tab-label.hover>h4
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody *.u_1041075399 *.tab-label.active>h4>span
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody *.u_1041075399 *.tab-label.hover>h4>span
+{
+	text-align:CENTER !important;
+}
+*#dm *.dmBody *.u_1041075399 .tab .desc-title
+{
+	text-align:LEFT !important;
+}
+
+</style>
+
+<style id="pagestyleDevice" type="text/css">*#dm *.dmBody div.u_1435141028
+{
+	background-color:rgba(255,255,255,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/meng-ji-n38db0fhuZk-unsplash-1920w.jpg) !important;
+}
+*#dm *.dmBody div.u_1678698512
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/fezbot2000-B-wYmhZGIsw-unsplash-1920w.jpg) !important;
+}@media all and (min-width:1920px), all and (-webkit-min-device-pixel-ratio: 1.5), all and (min--moz-device-pixel-ratio: 1.5), all and (min-device-pixel-ratio: 1.5) {
+
+*#dm *.dmBody div.u_1435141028
+{
+	background-color:rgba(255,255,255,1) !important;
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/meng-ji-n38db0fhuZk-unsplash-2880w.jpg) !important;
+}
+*#dm *.dmBody div.u_1678698512
+{
+	background-repeat:no-repeat !important;
+	background-image:url(https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/fezbot2000-B-wYmhZGIsw-unsplash-2880w.jpg) !important;
+}
+}
+*#dm *.dmBody div.u_1430326443 *.dmStoreSearchInput
+{
+	font-size:12px !important;
+}
+*#dm *.dmBody div.u_1430326443
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:175px !important;
+	position:relative !important;
+	height:34px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:calc(100% - 175px) !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:0 !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1156418759
+{
+	display:block !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:45px !important;
+	position:relative !important;
+	height:26px !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:5px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:right !important;
+}
+*#dm *.dmBody div.u_1156418759 *.cartIcon
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_1156418759 *.cartItems
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_1140831030
+{
+	padding-top:20px !important;
+	padding-bottom:20px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.grid-product__price-amount
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-sku
+{
+	font-size:11px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-details-descr h5
+{
+	font-size:22px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-details-descr h5 *
+{
+	font-size:22px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-details *.ecwid-fieldLabel
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-productBrowser-details *.ecwid-productBrowser-extraField-name-center
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-btn--secondary
+{
+	font-size:14px !important;
+	height:44px !important;
+}
+*#dm *.dmBody div.u_1661522082
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:20px !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:20px !important;
+	min-width:25px !important;
+	text-align:start !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ec-store__category-page *.page-title__name
+{
+	font-size:48px !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-store__category-page .ec-page-title__name
+{
+	font-size:48px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.grid-product__title-inner
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__price-value
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__buy-now .form-control__button
+{
+	width:200px !important;
+	height:50px !important;
+}
+*#dm *.dmBody div.u_1661522082 .grid-product__buy-now .form-control__button .form-control__button-text
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button
+{
+	width:250px !important;
+	height:50px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.ecwid-btn--primary
+{
+	width:250px !important;
+	height:50px !important;
+	font-size:24px !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button .form-control__button-text
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.u_1661522082 .form-control--primary .form-control__button .form-control__button-svg
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .page-title__name
+{
+	font-size:48px !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .ec-cart-next__text
+{
+	font-size:14px !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .ec-cart-item__options
+{
+	font-size:14px !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .ec-cart__cert
+{
+	font-size:14px !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-cart .ec-link:not(.breadcrumbs__link)
+{
+	font-size:16px !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-breadcrumbs
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1661522082 .ec-breadcrumbs *
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 *.dmwidget-title
+{
+	font-size:36px !important;
+}
+*#dm *.dmBody div.u_1552723084
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:640px !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:calc(100% - 160px) !important;
+	margin-top:0 !important;
+	margin-bottom:31px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody h2.u_1135286397
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:100% !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:calc(100% - 0px) !important;
+	margin-top:34px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+	display:block !important;
+}
+*#dm *.dmBody div.u_1552723084 *.dmformsubmit
+{
+	width:250px !important;
+	height:50px !important;
+}
+*#dm *.dmBody div.u_1552723084 input[type="submit"]
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmform-success
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.dmform-error
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmform-success .rteBlock
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.dmform-error .rteBlock
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput label:not(.for-checkable):not(.custom-contact-checkable)
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .m-recaptcha
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput input
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput textarea
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput .fileUploadLink
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .checkboxwrapper span
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .radiowrapper span
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .optinwrapper div
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .freetextwrapper
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput select
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1552723084 .dmforminput option
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1435141028
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:40px !important;
+	padding-bottom:0 !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	background-repeat:repeat !important;
+	background-size:cover !important;
+	background-attachment:fixed !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+}
+*#dm *.dmBody div.u_1935799403
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:40px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1476057532
+{
+	padding-top:80px !important;
+	padding-bottom:80px !important;
+	padding-right:20px !important;
+	padding-left:20px !important;
+}
+*#dm *.dmBody div.u_1678698512
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:20px !important;
+	padding-left:40px !important;
+	padding-bottom:20px !important;
+	margin-right:0 !important;
+	margin-left:0 !important;
+	max-width:100% !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:center !important;
+	background-attachment:fixed !important;
+	background-size:cover !important;
+}
+*#dm *.dmBody h3.u_1738829313
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0 !important;
+	padding-bottom:2px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:-50px !important;
+	margin-bottom:8px !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:left !important;
+}
+*#dm *.dmBody div.u_1339778186
+{
+	width:calc(100% - 175px) !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0 !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:0 !important;
+	margin-left:175px !important;
+	max-width:250px !important;
+	margin-top:0 !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:center !important;
+}
+*#dm *.dmBody div.u_1124575650
+{
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:40px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1200501292
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 91px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:0px !important;
+	margin-left:91px !important;
+	max-width:383px !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1659273027
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:0px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1233582630
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:567px !important;
+	margin-top:0px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1771970270
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:100% !important;
+	margin-top:8.67707px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1581964913
+{
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:0px !important;
+	padding-left:0px !important;
+	padding-bottom:0px !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:56px !important;
+	margin-bottom:0px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1118011092
+{
+	float:none !important;
+	top:0px !important;
+	left:0px !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	margin-right:0px !important;
+	margin-left:0px !important;
+	max-width:567px !important;
+	margin-top:25px !important;
+	margin-bottom:8px !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+}
+*#dm *.dmBody div.u_1661522082 *.grid-category__title-inner
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.image-container
+{
+	height:444px !important;
+}
+*#dm *.dmBody div.u_1041075399 image-container *.image
+{
+	height:444px !important;
+}
+*#dm *.dmBody div.u_1041075399
+{
+	padding-top:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:37px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1394865387
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:40px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.not-active>h4
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.active>h4
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.hover>h4
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.active>h4>span
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.hover>h4>span
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab *.tab-description>p
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1041075399 .active .button-class
+{
+	width:200px !important;
+	height:50px !important;
+}
+*#dm *.dmBody div.u_1041075399 .active .button-class span.text
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab *.desc-title
+{
+	font-size:36px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.image-container
+{
+	height:444px !important;
+}
+*#dm *.dmBody div.u_1041075399 image-container *.image
+{
+	height:444px !important;
+}
+*#dm *.dmBody div.u_1041075399
+{
+	padding-top:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:0 !important;
+	padding-bottom:0 !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	max-width:100% !important;
+	margin-top:37px !important;
+	margin-bottom:0 !important;
+	padding-right:0 !important;
+	min-width:25px !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1394865387
+{
+	padding-top:0 !important;
+	padding-bottom:0 !important;
+	float:none !important;
+	top:0 !important;
+	left:0 !important;
+	width:auto !important;
+	position:relative !important;
+	height:auto !important;
+	padding-left:40px !important;
+	max-width:100% !important;
+	padding-right:40px !important;
+	min-width:0 !important;
+	text-align:start !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.not-active>h4
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.active>h4
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.hover>h4
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.active>h4>span
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab-label.hover>h4>span
+{
+	font-size:30px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab *.tab-description>p
+{
+	font-size:18px !important;
+}
+*#dm *.dmBody div.u_1041075399 .active .button-class
+{
+	width:200px !important;
+	height:50px !important;
+}
+*#dm *.dmBody div.u_1041075399 .active .button-class span.text
+{
+	font-size:24px !important;
+}
+*#dm *.dmBody div.u_1041075399 *.tab *.desc-title
+{
+	font-size:36px !important;
+}
+*#dm *.dmBody h3.u_1370922509
+{
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+*#dm *.dmBody h3.u_1370922509
+{
+	display:block !important;
+	float:none !important;
+	top:0px !important;
+	left:0 !important;
+	width:calc(100% - 0px) !important;
+	position:relative !important;
+	height:auto !important;
+	padding-top:2px !important;
+	padding-left:0px !important;
+	padding-bottom:2px !important;
+	max-width:100% !important;
+	padding-right:0px !important;
+	min-width:25px !important;
+	text-align:center !important;
+	margin-right:auto !important;
+	margin-left:auto !important;
+	margin-top:0px !important;
+	margin-bottom:0px !important;
+}
+
+</style>
+
+
+
+
+<!--[if IE 7]><style>.fw-head.fw-logo img{max-width: 290px;}.dm_header .logo-div img{max-width: 290px;}</style><![endif]-->
+<!--[if IE 8]><style>.fw-head .fw-logo img{max-width: 290px;}.dm_header .logo-div img{max-width: 290px;}*#dm div.dmHeader{_height:90px;min-height:0px;}</style><![endif]-->
+
+
+
+    <style id="globalFontSizeStyle" type="text/css">.font-size-21, .size-21, .size-21 > font { font-size: 21px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-21, .size-21, .size-21 > font { font-size: 21px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-34, .size-34, .size-34 > font { font-size: 34px !important; }.font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-34, .size-34, .size-34 > font { font-size: 34px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-31, .size-31, .size-31 > font { font-size: 31px !important; }.font-size-44, .size-44, .size-44 > font { font-size: 44px !important; }.font-size-44, .size-44, .size-44 > font { font-size: 44px !important; }.font-size-31, .size-31, .size-31 > font { font-size: 31px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-72, .size-72, .size-72 > font { font-size: 72px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-21, .size-21, .size-21 > font { font-size: 21px !important; }.font-size-30, .size-30, .size-30 > font { font-size: 30px !important; }.font-size-21, .size-21, .size-21 > font { font-size: 21px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-48, .size-48, .size-48 > font { font-size: 48px !important; }.font-size-36, .size-36, .size-36 > font { font-size: 36px !important; }.font-size-60, .size-60, .size-60 > font { font-size: 60px !important; }.font-size-38, .size-38, .size-38 > font { font-size: 38px !important; }.font-size-27, .size-27, .size-27 > font { font-size: 27px !important; }.font-size-38, .size-38, .size-38 > font { font-size: 38px !important; }.font-size-27, .size-27, .size-27 > font { font-size: 27px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-13, .size-13, .size-13 > font { font-size: 13px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-13, .size-13, .size-13 > font { font-size: 13px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }.font-size-18, .size-18, .size-18 > font { font-size: 18px !important; }
+    </style>
+    <style id="pageFontSizeStyle" type="text/css">
+    </style>
+
+
+<!-- Flex Sections CSS -->
+
+
+<!-- ========= JS Section ========= -->
+
+<!-- Modernizr -->
+<script>
+    /* THIS FILE IS AUTO-GENERATED. SEE build/build-modernizr */
+
+/*! modernizr 3.5.0 (Custom Build) | MIT *
+ * https://modernizr.com/download/?-passiveeventlisteners-supports-setclasses-cssclassprefix:dm- !*/
+!function(e,n,s){function o(e,n){return typeof e===n}function t(){var e,n,s,t,a,r,l;for(var c in i)if(i.hasOwnProperty(c)){if(e=[],n=i[c],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(s=0;s<n.options.aliases.length;s++)e.push(n.options.aliases[s].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)r=e[a],l=r.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),f.push((t?"":"no-")+l.join("-"))}}function a(e){var n=l.className,s=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+s+"no-js(\\s|$)");n=n.replace(o,"$1"+s+"js$2")}Modernizr._config.enableClasses&&(n+=" "+s+e.join(" "+s),c?l.className.baseVal=n:l.className=n)}var i=[],r={_version:"3.5.0",_config:{classPrefix:"dm-",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var s=this;setTimeout(function(){n(s[e])},0)},addTest:function(e,n,s){i.push({name:e,fn:n,options:s})},addAsyncTest:function(e){i.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=r,Modernizr=new Modernizr;var f=[],l=n.documentElement,c="svg"===l.nodeName.toLowerCase(),u="CSS"in e&&"supports"in e.CSS,p="supportsCSS"in e;Modernizr.addTest("supports",u||p),Modernizr.addTest("passiveeventlisteners",function(){var n=!1;try{var s=Object.defineProperty({},"passive",{get:function(){n=!0}});e.addEventListener("test",null,s)}catch(o){}return n}),t(),a(f),delete r.addTest,delete r.addAsyncTest;for(var d=0;d<Modernizr._q.length;d++)Modernizr._q[d]();e.Modernizr=Modernizr}(window,document);
+    var isWLR = true;
+
+    window.customWidgetsFunctions = {};
+    window.customWidgetsStrings = {};
+    
+    window.collections = {};
+    </script>
+<script>
+    window.customWidgetsFunctions["7b2ba547771b4d4db17e3e2b9f0abd0c~210"] = function (element, data, api) {
+        var $element = $(element);
+var $tabs = $element.find('.tab');// not relevant for mobile
+var $tabLables = $element.find('.tab-label');
+
+if ($tabs.length > 0) { 
+    if (data.device==="mobile" && data.config.mobileLayoutToggle) {// on mobile and dropdown mode
+    	addMobileClickListener($element);
+    } 
+    else { // on desktop or accordion mobile layout
+       addDesktopClickListener($element);
+    }
+    addHoverHandler($tabLables);
+}
+
+function addMobileClickListener($element)  {
+    // tab label mobile click handler;
+    $element.off('click.tabs.mobile').on('click.tabs.mobile', '.tab-label', function() {
+    	    var $clicked_tab_item = $(this).closest('.tab-item');
+            var $siblings = $clicked_tab_item.siblings();
+            domChangeOnMobileClick($clicked_tab_item, $siblings);
+        });
+        
+}
+
+function addDesktopClickListener($element) {
+        $tabLables.off('click.tabs.desktop').on('click.tabs.desktop', function(event) {
+            var $curr = $(this);
+            // layout-e-aux-tab-label is an auxilary class represents the
+            // remaining space on layout 3's labels, it shouldn't be selectable
+            if ( $curr.hasClass('active') || $curr.hasClass('layout-e-aux-tab-label')){ 
+                return;
+            }
+            domChangeOnDesktopClick($curr);
+        });
+        
+        
+}
+
+
+function addHoverHandler($tabLables) {
+  //background hover issue hack - pseusu class support in widget builder is limited
+    $tabLables.off('mouseover.tabs').on('mouseenter.tabs', function(event) {
+        var $this = $(this);
+        // aux label on layout e should'nt be selected
+        if ($this.hasClass('layout-e-aux-tab-label')) return;
+        $this.addClass('hover');
+        $this.removeClass('not-active');
+    });
+    $tabLables.off('mouseout.tabs').on('mouseleave.tabs', function(event){
+        var $this = $(this);
+        // aux label on layout e should'nt be selected
+        if ($this.hasClass('layout-e-aux-tab-label')) return;
+        if (! $this.hasClass('active') ) {
+            $this.removeClass('hover');
+            $this.addClass('not-active');
+        }
+    });
+}
+
+function domChangeOnMobileClick($clicked_tab_item, $siblings) {
+    $siblings.removeClass('expanded');
+    $siblings.find('.tab-label').removeClass('active').addClass('not-active');
+    $clicked_tab_item.toggleClass('expanded');
+    $clicked_tab_item.find('.tab-label').toggleClass('active');
+}
+
+function domChangeOnDesktopClick($curr) {
+    $curr.addClass('active').removeClass('not-active').removeClass('hover');
+    $siblings = $curr.siblings();
+    $siblings.removeClass('active').addClass('not-active').removeClass('hover');
+    //If no argument is passed to the .index() method, the return value is an integer indicating the position of the 
+    //first element within the jQuery object relative to its sibling elements.
+    var index = $curr.index();
+    $tabs.removeClass('active');
+    $tabs.eq(index).addClass('active');
+}
+    };
+</script>
+<script>
+                window.collections = JSON.parse(decodeURIComponent(escape(atob("e30="))));
+</script>
+
+
+
+<script type="text/javascript">
+
+    var version = "5.9.4";
+    var build = "2020-11-03T07_51_56";
+
+    function buildEditorParent() {
+        window.isMultiScreen = true;
+        window.editorParent = {};
+        window.previewParent = {};
+        window.assetsCacheQueryParam = "?version=2020-11-03T07_51_56";
+        try {
+            var _p = window.parent;
+            if (_p && _p.document && _p.$ && _p.$.dmfw) {
+                window.editorParent = _p;
+            }
+            else if (_p.isSitePreview) {
+                window.previewParent = _p;
+            }
+        } catch (e) {
+
+        }
+    }
+
+    buildEditorParent();
+
+
+</script>
+<!-- Load jQuery -->
+<script type="text/javascript" src="https://static-cdn.multiscreensite.com/libs/jquery/2.2.4/jquery.min.js"></script>
+<!-- End Load jQuery --><script>
+    window.cookiesNotificationMarkupPreview = 'null';
+</script>
+<script>
+    var shouldMonitorImages =  false;
+    if(shouldMonitorImages) {
+        window.addEventListener('error', function(event) {
+            if(event.target && event.target.tagName === 'IMG' && event.target.src && event.target.src.includes && event.target.src.includes('multiscreensite.com')) {
+                if (!window.fetch){
+                    return;
+                }
+                try {
+                    return fetch('/_dm/s/rt/actions/log/WARN', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ data: {
+                                type: 'image failed to load',
+                                eventType: event.type,
+                                image: event.target.src,
+                                href: window.location.href
+                            } })
+                    });
+                } catch (error) {
+                    console.log(error);
+                }
+
+            }
+        }, { capture: true });
+    }
+
+</script>
+<!-- HEAD RT JS Include -->
+<script>
+    window.INSITE = window.INSITE || {};
+    window.INSITE.device = "desktop";
+    window.rtCommonProps = {};
+    rtCommonProps["rt.ajax.ajaxScriptsFix"] =true;
+    rtCommonProps["rt.pushnotifs.sslframe.encoded"] = 'aHR0cHM6Ly97c3ViZG9tYWlufS5wdXNoLW5vdGlmcy5jb20=';
+    rtCommonProps["facebook.accessToken"] = '126515034112906|8vv7JhnEegS8qz43fIOZjxGZReA';
+    rtCommonProps["performance.tabletPreview.removeScroll"] = 'false';
+    rtCommonProps["feature.flag.contactUsNewForm"] = 'true';
+    rtCommonProps["inlineEditGrid.snap"] =true;
+    rtCommonProps["popup.insite.cookie.ttl"] = '0.5';
+    rtCommonProps["rt.pushnotifs.force.button"] =true;
+    rtCommonProps["google.places.key"] = 'AIzaSyBAwUOqPUB1CU31yDztoZYaUE7sPv4ktEI';
+    rtCommonProps["common.mapbox.token"] = 'pk.eyJ1IjoiZGFubnliMTIzIiwiYSI6ImNqMGljZ256dzAwMDAycXBkdWxwbDgzeXYifQ.Ck5P-0NKPVKAZ6SH98gxxw';
+    rtCommonProps["common.mapbox.js.override"] =false;
+    rtCommonProps["common.opencage.token"] = '319e14f32bcce967ba55cd263478796d';
+    rtCommonProps["common.here.appId"] = 'iYvDjIQ2quyEu0rg0hLo';
+    rtCommonProps["common.here.appCode"] = '1hcIxLJcbybmtBYTD9Z1UA';
+    rtCommonProps["isCoverage.test"] =false;
+    rtCommonProps["ecommerce.ecwid.script"] = 'https://app.multiscreenstore.com/script.js';
+    rtCommonProps["feature.flag.mappy.kml"] =false;
+    rtCommonProps["common.resources.dist.cdn"]=true;
+    rtCommonProps["common.build.dist.folder"]='production/1476';
+    rtCommonProps["common.resources.cdn.host"]='https://static-cdn.multiscreensite.com';
+    rtCommonProps["common.resources.folder"]='https://static-cdn.multiscreensite.com/mnlt/production/1476';
+    rtCommonProps["import.images.storage.useImageCDN"]=true;
+    rtCommonProps["feature.flag.runtime.photoswipe.fix"]=true;
+    rtCommonProps["feature.flag.runtime.newAnimation.enabled"]=true;
+    rtCommonProps["feature.flag.animations.allowInMobile"]=true;
+    rtCommonProps["feature.flag.videoRefresh.refactor"]=true;
+    
+    rtCommonProps['common.mapsProvider'] = 'mapbox';
+    rtCommonProps['common.mapsProvider.version'] = '0.52.0';
+    rtCommonProps['common.geocodeProvider'] = 'here';
+    rtCommonProps['common.map.defaults.radiusSize'] = '1500';
+    rtCommonProps['common.map.defaults.radiusBg'] = 'rgba(255, 255, 255, 0.4)';
+    rtCommonProps['common.map.defaults.strokeColor'] = 'rgba(255, 255, 255, 1)';
+    rtCommonProps['common.map.defaults.strokeSize'] = '2';
+    rtCommonProps['server.for.resources'] = '';
+    rtCommonProps['feature.flag.lazy.widgets'] = false;
+    rtCommonProps['editor.infra.noPrefixedChanges'] = true;
+    rtCommonProps['feature.flag.single.wow'] = false;
+    rtCommonProps['feature.flag.mark.anchors']= true;
+    rtCommonProps['feature.flag.runtime.miniheader.chromefix'] = false;
+    rtCommonProps['captcha.public.key'] = '6LffcBsUAAAAAMU-MYacU-6QHY4iDtUEYv_Ppwlz';
+    rtCommonProps['captcha.invisible.public.key'] = '6LeiWB8UAAAAAHYnVJM7_-7ap6bXCUNGiv7bBPME';
+    rtCommonProps["images.sizes.small"]=160;
+    rtCommonProps["images.sizes.mobile"]=640;
+    rtCommonProps["images.sizes.tablet"]=1280;
+    rtCommonProps["images.sizes.desktop"]=1920;
+    rtCommonProps["modules.resources.cdn"]=true;
+    rtCommonProps["import.images.storage.imageCDN"]='https://lirp-cdn.multiscreensite.com/';
+    rtCommonProps["facebook.api.version"]='7.0';
+    rtCommonProps["custom.widget.new.runtime.enabled"]=true;
+
+</script>
+<script src="https://static-cdn.multiscreensite.com/mnlt/production/1476/_dm/s/rt/dist/scripts/d-js-runtime-one-package.min.js" ></script>
+<!-- End of HEAD RT JS Include -->
+<script src="https://static-cdn.multiscreensite.com/mnlt/production/1476/_dm/s/rt/dist/scripts/d-js-one-runtime-layouts-package.min.js" ></script>
+<script src="https://static-cdn.multiscreensite.com/mnlt/production/1476/_dm/s/rt/dist/scripts/d-js-one-runtime-layouts-desktop.min.js" ></script>
+<script>jQuery.DM.updateWidthAndHeight();
+$(window).resize(function () {
+    
+});
+$(window).bind("orientationchange", function (e) {
+    $.layoutManager.initLayout();
+    
+});
+$(document).resize(function () {
+    
+});
+</script>
+
+
+
+
+
+
+<!-- End render the required css and JS in the head section -->
+
+
+
+
+
+
+        <title>3/4 Mattress Protector</title>
+    <meta property="og:title" content="3/4 Mattress Protector" />
+    <meta property="og:url" content="https://www.bfhfurniture.co.za/store/3-4-Mattress-Protector-p237280612" />
+        <meta property="og:image" content='https://s3.amazonaws.com/images.ecwid.com/images/36992043/1667086301.jpg' />
+    <meta property="og:site_name" content="BFH Furniture" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="3/4 Mattress Protector">
+        <meta name="twitter:description" content="3/4 Mattress Protector">
+        <meta name="twitter:image" content="https://s3.amazonaws.com/images.ecwid.com/images/36992043/1667086301.jpg">
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org/",
+  "@type": "Product",
+  "name": "3/4 Mattress Protector",
+  "image": [
+            "https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086301.jpg",
+            "https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091868.jpg",
+            "https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095556.jpg"
+  ],
+	"description": "",
+  "sku": "MP002",
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "ZAR",
+    "price": "449",
+    "url": "https://www.bfhfurniture.co.za/store/3-4-Mattress-Protector-p237280612",
+      "itemCondition": "http://schema.org/NewCondition",
+
+    "availability": "http://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "BFH Furniture"
+    }
+  }
+}
+</script>
+
+  <meta property="og:image" content="https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/kam-idris-kyt0PkBSCNQ-unsplash-1920w.jpg"/>
+  <meta name="keywords" content="beds, headboards, bed manufacturer, bed factory shop, bed sale, beds at factory price, furniture, furniture shop, really, restonic,viking beds, tempure,"/>
+
+  <meta name="description" content="We with the Top Manufacturers in South Africa to bring you the Best Quality at the Most Affordable Prices."/>
+  <script>
+
+
+
+
+
+
+
+for (let element of document.getElementsByClassName("classname")){
+   element.style.display="none";
+}
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  </script>
+  <!-- Facebook Pixel Code -->  <script>
+
+
+
+
+
+
+
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '799228530824510');
+  fbq('track', 'PageView');
+  
+
+  
+
+  
+
+  
+
+  </script>
+
+
+
+
+
+
+<!-- SYS- VVNfRElSRUNUX1BST0RVQ1RJT04= -->
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body id="dmRoot"  class="supportsFontIcons supportsFontIcons dmRoot dmDesktopBody fix-mobile-scrolling dmResellerSite mac dmLargeBody " style="padding:0;margin:0;"
+            >
+        <div id="disabledImageZone" style="display:none;z-index:-1">
+            <style type="text/css">#imageZone {
+                    position: absolute;
+                    margin: auto;
+                }
+
+                .coloumns {
+                    border-radius: 3px;
+                    background-color: rgb(249, 152, 13); /*border:1px solid #999;*/
+                    height: 18px;
+                    width: 6px;
+                    -webkit-animation-name: loader;
+                    -webkit-animation-duration: 1s;
+                    -webkit-animation-iteration-count: infinite;
+                    -webkit-animation-direction: linear;
+                    -moz-animation-name: loader;
+                    -moz-animation-duration: 1s;
+                    -moz-animation-iteration-count: infinite;
+                    -moz-animation-direction: linear;
+                    opacity: .25;
+                    -webkit-transform: scale(0.7);
+                    -webkit-transform-origin: 50% 180%;
+                    -moz-transform: scale(0.7);
+                    -moz-transform-origin: 50% 180%;
+                    position: absolute;
+                }
+
+                #coloumn1 {
+                    -webkit-transform: rotate(0deg);
+                    -webkit-animation-delay: -.914s;
+                    -moz-transform: rotate(0deg);
+                    -moz-animation-delay: -.914s;
+                }
+
+                #coloumn2 {
+                    -webkit-transform: rotate(30deg);
+                    -webkit-animation-delay: -.831s;
+                    -moz-transform: rotate(30deg);
+                    -moz-animation-delay: -.831s;
+                }
+
+                #coloumn3 {
+                    -webkit-transform: rotate(60deg);
+                    -webkit-animation-delay: -.747s;
+                    -moz-transform: rotate(60deg);
+                    -moz-animation-delay: -.747s;
+                }
+
+                #coloumn4 {
+                    -webkit-transform: rotate(90deg);
+                    -webkit-animation-delay: -.664s;
+                    -moz-transform: rotate(90deg);
+                    -moz-animation-delay: -.664s;
+                }
+
+                #coloumn5 {
+                    -webkit-transform: rotate(120deg);
+                    -webkit-animation-delay: -.581s;
+                    -moz-transform: rotate(120deg);
+                    -moz-animation-delay: -.581s;
+                }
+
+                #coloumn6 {
+                    -webkit-transform: rotate(150deg);
+                    -webkit-animation-delay: -.498s;
+                    -moz-transform: rotate(150deg);
+                    -moz-animation-delay: -.498s;
+                }
+
+                #coloumn7 {
+                    -webkit-transform: rotate(180deg);
+                    -webkit-animation-delay: -.415s;
+                    -moz-transform: rotate(180deg);
+                    -moz-animation-delay: -.415s;
+                }
+
+                #coloumn8 {
+                    -webkit-transform: rotate(210deg);
+                    -webkit-animation-delay: -.332s;
+                    -moz-transform: rotate(210deg);
+                    -moz-animation-delay: -.332s;
+                }
+
+                #coloumn9 {
+                    -webkit-transform: rotate(240deg);
+                    -webkit-animation-delay: -.249s;
+                    -moz-transform: rotate(240deg);
+                    -moz-animation-delay: -.249s;
+                }
+
+                #coloumn10 {
+                    -webkit-transform: rotate(270deg);
+                    -webkit-animation-delay: -.166s;
+                    -moz-transform: rotate(270deg);
+                    -moz-animation-delay: -.166s;
+                }
+
+                #coloumn11 {
+                    -webkit-transform: rotate(300deg);
+                    -webkit-animation-delay: -.083s;
+                    -moz-transform: rotate(300deg);
+                    -moz-animation-delay: -.083s;
+                }
+
+                #coloumn12 {
+                    -webkit-transform: rotate(330deg);
+                    -moz-transform: rotate(330deg);
+                }
+
+                @-webkit-keyframes loader {
+                    0% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: .25;
+                    }
+                }
+
+                @-moz-keyframes loader {
+                    0% {
+                        opacity: 1;
+                    }
+                    100% {
+                        opacity: .25;
+                    }
+                }
+            </style>
+            <div id='imageZone'>
+                <div id='coloumn1' class='coloumns'></div>
+                <div id='coloumn2' class='coloumns'></div>
+                <div id='coloumn3' class='coloumns'></div>
+                <div id='coloumn4' class='coloumns'></div>
+                <div id='coloumn5' class='coloumns'></div>
+                <div id='coloumn6' class='coloumns'></div>
+                <div id='coloumn7' class='coloumns'></div>
+                <div id='coloumn8' class='coloumns'></div>
+                <div id='coloumn9' class='coloumns'></div>
+                <div id='coloumn10' class='coloumns'></div>
+                <div id='coloumn11' class='coloumns'></div>
+                <div id='coloumn12' class='coloumns'></div>
+            </div>
+        </div>
+
+        <!-- ========= Site Content ========= -->
+        <div id="dm" class='dmwr'>
+            
+            <div class="dm_wrapper standard-var5 widgetStyle-3 standard">
+                 <div dmwrapped="true" id="1521622369"> <div dmtemplateid="StandardLayoutMultiD" class="standardHeaderLayout dm-bfs dm-layout-sec hasAnimations hasStickyHeader dmPageBody d-page-1086818251 dmFreeHeader" id="dm-outer-wrapper" data-page-class="1086818251" data-buttonstyle="FLAT_ROUND" data-soch="true" data-background-size="cover" data-background-attachment="fixed" data-background-repeat="no-repeat" data-background-position="50% 0%" data-background-hide-inner="true" data-background-fullbleed="false" data-background-parallax-selector=".dmSectionParallex" data-background-parallax-speed="0.2"> <div id="dmStyle_outerContainer" class="dmOuter"> <div id="dmStyle_innerContainer" class="dmInner"> <div class="dmLayoutWrapper standard-var dmStandardDesktop"> <ul class="dmn dmLayoutNav hiddenNavPlaceHolder navPlaceHolder dmDisplay_None"></ul> 
+ <div> <div id="iscrollBody"> <div id="site_content"> <div class="dmHeaderContainer fHeader d-header-wrapper"> <div id="hcontainer" class="u_hcontainer dmHeader p_hfcontainer" freeheader="true" headerlayout="727" layout="78f5c343822e4eb3aac27f4ad5d13812===header" data-scrollable-target="body" data-scrollable-target-threshold="1" data-scroll-responder-id="1" logo-size-target="83%"> <div dm:templateorder="85" class="dmHeaderResp dmHeaderStack noSwitch" id="1709005236"> <div class="u_1239093477 dmRespRow dmDefaultListContentRow" style="text-align:center" id="1239093477"> <div class="dmRespColsWrapper" id="1593956466"> <div class="u_1595056817 small-12 dmRespCol medium-6 large-6" id="1595056817"> <div class="dmNewParagraph" data-dmtmpl="true" data-element-type="paragraph" data-version="5" id="1568228287" style="transition: opacity 1s ease-in-out 0s;" data-uialign="center"><p class="m-size-21 size-30"><span class="m-font-size-21 font-size-30" style="font-style: italic; font-weight: 700; font-family: 'Playfair Display'; display: initial;">BFH Furniture</span></p></div> 
+</div> 
+ <div class="u_1876061884 dmRespCol small-12 medium-6 large-6" id="1876061884"> <span id="1322776619"></span> 
+ <nav class="u_1630465224 effect-bottom2 main-navigation unifiednav dmLinksMenu" role="navigation" layout-main="horizontal_nav_layout_1" layout-sub="submenu_horizontal_1" data-show-vertical-sub-items="HOVER" id="1630465224" dmle_extension="onelinksmenu" data-element-type="onelinksmenu" data-logo-src="https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/desktop/home_logo-483x100.png" data-nav-structure="HORIZONTAL" wr="true" icon="true" surround="true" adwords="" data-from-nav="true" data-sub-nav="true" data-items="-1" custom-li-class="" custom-ul-class="" custom-a-class="" custom-inner-ul-class="" custom-nested-inner-ul-class="" custom-span-class="" navigation-id="unifiedNav" data-links-level="0" is-build-your-own="false"> <ul class="unifiednav__container  " data-auto&#x3d;navigation-pages=""> <li class=" unifiednav__item-wrap " data-auto&#x3d;more-pages=""> <a href="../index.html" class="unifiednav__item  dmUDNavigationItem_00  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+                  
+         HOME
+        
+                " data-auto&#x3d;page-text-style="">HOME<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li class=" unifiednav__item-wrap " data-auto&#x3d;more-pages=""> <a href="../store.html" class="unifiednav__item  dmNavItemSelected  dmUDNavigationItem_010101300049  " target="" data-target-page-alias="" data-auto&#x3d;selected-page=""> <span class="nav-item-text " data-link-text="
+                  
+         STORE
+        
+                " data-auto&#x3d;page-text-style="">STORE<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li class=" unifiednav__item-wrap " data-auto&#x3d;more-pages=""> <a href="../specials.html" class="unifiednav__item  dmUDNavigationItem_010101690379  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+                  
+         SPECIALS
+        
+                " data-auto&#x3d;page-text-style="">SPECIALS<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li class=" unifiednav__item-wrap " data-auto&#x3d;more-pages=""> <a href="../about.html" class="unifiednav__item  dmUDNavigationItem_010101661768  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+                  
+         ABOUT
+        
+                " data-auto&#x3d;page-text-style="">ABOUT<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+ <li class=" unifiednav__item-wrap " data-auto&#x3d;more-pages=""> <a href="../contact.html" class="unifiednav__item  dmUDNavigationItem_010101502206  " target="" data-target-page-alias=""> <span class="nav-item-text " data-link-text="
+                  
+         CONTACT
+        
+                " data-auto&#x3d;page-text-style="">CONTACT<span class="icon icon-angle-down"></span> 
+</span> 
+</a> 
+</li> 
+</ul> 
+</nav> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="stickyHeaderSpacer" id="stickyHeaderSpacer" data-new="true"></div> 
+ <div class="dmRespRow dmRespRowStable dmRespRowNoPadding dmPageTitleRow "> <div class="dmRespColsWrapper"> <div class="large-12 dmRespCol"> <div id="innerBar" class="innerBar lineInnerBar dmDisplay_None"> <div class="titleLine display_None"><hr/></div> 
+<!-- Page title is hidden in css for new responsive sites. It is left here only so we don't break old sites. Don't copy it to new layouts --> <div id="pageTitleText"> <div class="innerPageTitle">STORE</div> 
+</div> 
+ <div class="titleLine display_None"><hr/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div dmwrapped="true" id="1521622369" class="dmBody u_dmStyle_template_store"> <div id="allWrapper" class="allWrapper"><!-- navigation placeholders --> <div id="dm_content" class="dmContent"> <div dm:templateorder="1" class="dmDefaultRespTmpl" id="1086818251"> <div class="innerPageTmplBox dmDefaultPage  dmRespRowsWrapper" id="1662889341"> <div class="dmRespRow u_1140831030" style="text-align: center;" id="1140831030" mode="2"> <div class="dmRespColsWrapper" id="1143201593"> <div class="u_1491403363 dmRespCol large-11 medium-11 small-6" id="1491403363"> <span id="1135857652"></span> 
+ <div class="u_1430326443 dmStoreSearch" data-element-type="ec_store_search" id="1430326443"> <div class="dmStoreSearchWrapper" id="1950886223"><input type="text" class="dmStoreSearchInput" maxlength="100" id="1689458078"/> <div class="dmStoreSearchClickOverlay" id="1283518738"></div> 
+ <div class="dmStoreSearchIcon dm-icon-search2" id="1472329340"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1631869850 dmRespCol large-1 medium-1 small-6" id="1631869850"> <span id="1167663414"></span> 
+ <div class="u_1156418759 dmStoreCart" data-element-type="ec_store_cart" id="1156418759"> <span class="cartIcon dm-icon-shopping-cart ecwid" id="1751757844"> <span class="cartItems" id="1616169187">0</span> 
+</span> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1935799403 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1935799403"> <div class="dmRespColsWrapper" id="1006666406"> <div class="dmRespCol small-12 medium-12 large-12" id="1062497911"> <span id="1360930052"></span> 
+ <div class="u_1661522082 default dmDefaultGradient dmStore" id="1661522082" dmle_extension="ec_store" data-element-type="ec_store" wr="true" loadscript="true" icon="true" surround="true" adwords="" data-store="eyJpZCI6MzY5OTIwNDMsImdyaWRWaWV3TWF4UHJvZHVjdHNQZXJSb3ciOjMsImdyaWRWaWV3TWF4UHJvZHVjdHNQZXJDb2x1bW4iOjMsInRhYmxlVmlld1NpemUiOjIwLCJsaXN0Vmlld1NpemUiOjEwLCJzZWFyY2hNb2RlVmlldyI6ImdyaWQiLCJjYXRlZ29yaWVzTW9kZVZpZXciOiJncmlkIiwic3RvcmVQYWdlQWxpYXMiOiJzdG9yZSIsInNob3dCcmVhZGNydW1icyI6dHJ1ZSwiaW5pdGlhbFN0b3JlU2NyZWVuIjoiQ0FURUdPUllAQDYwNDg2MjExIiwicHJvZHVjdExpc3RJbWFnZVNpemUiOiJtZWRpdW0iLCJwcm9kdWN0TGlzdEltYWdlQXNwZWN0UmF0aW8iOiJzcXVhcmVfMSIsInByb2R1Y3RMaXN0Q2VsbFNwYWNpbmciOiIxNSIsInByb2R1Y3RMaXN0SW1hZ2VIYXNTaGFkb3ciOiJmYWxzZSIsInByb2R1Y3RMaXN0U2hvd0FkZGl0aW9uYWxJbWFnZU9uSG92ZXIiOiJ0cnVlIiwicHJvZHVjdExpc3RTaG93RnJhbWUiOiJmYWxzZSIsInByb2R1Y3RMaXN0UHJvZHVjdEluZm9MYXlvdXQiOiJjZW50ZXIiLCJwcm9kdWN0TGlzdFRpdGxlQmVoYXZpb3IiOiJzaG93X29uX2hvdmVyIiwicHJvZHVjdExpc3RTa3VCZWhhdmlvciI6ImhpZGUiLCJwcm9kdWN0TGlzdFByaWNlQmVoYXZpb3IiOiJzaG93X29uX2hvdmVyIiwicHJvZHVjdExpc3RCdXlidXR0b25CZWhhdmlvciI6InNob3dfb25faG92ZXIiLCJwcm9kdWN0TGlzdENhdGVnb3J5SW1hZ2VTaXplIjoibGFyZ2UiLCJwcm9kdWN0TGlzdENhdGVnb3J5SW1hZ2VBc3BlY3RSYXRpbyI6ImxhbmRzY2FwZV8xMzMzIiwicHJvZHVjdExpc3RDYXRlZ29yeVRpdGxlQmVoYXZpb3IiOiJzaG93X29uX2hvdmVyIiwicHJvZHVjdExpc3RDYXRlZ29yeUNlbGxTcGFjaW5nIjoiNSIsImVuYWJsZVNpbXBsZUNhdGVnb3J5TGlzdCI6ZmFsc2UsInByb2R1Y3REZXRhaWxzU2hvd1F0eSI6ImZhbHNlIiwicHJvZHVjdERldGFpbHNTaG93SW5TdG9ja0xhYmVsIjoiZmFsc2UiLCJwcm9kdWN0RGV0YWlsc1Nob3dOdW1iZXJPZkl0ZW1zSW5TdG9jayI6ImZhbHNlIiwicHJvZHVjdERldGFpbHNTaG93VGF4IjoiZmFsc2UiLCJwcm9kdWN0RGV0YWlsc1Nob3dQcm9kdWN0T3B0aW9ucyI6InRydWUiLCJwcm9kdWN0RGV0YWlsc1Nob3dXaG9sZXNhbGVQcmljZXMiOiJmYWxzZSIsInByb2R1Y3REZXRhaWxzU2hvd1NoYXJlQnV0dG9ucyI6InRydWUiLCJwcm9kdWN0RGV0YWlsc0xheW91dCI6IlRXT19DT0xVTU5TX1NJREVCQVJfT05fVEhFX1JJR0hUIiwicHJvZHVjdERldGFpbHNHYWxsZXJ5TGF5b3V0IjoiSU1BR0VfU0lOR0xFX1RIVU1CTkFJTFNfVkVSVElDQUwiLCJwcm9kdWN0RGV0YWlsc1RodW1ibmFpbHNBc3BlY3RSYXRpbyI6InNxdWFyZV8xIiwibW9iaWxlUHJvZHVjdExpc3RTa3VCZWhhdmlvciI6ImhpZGUiLCJtb2JpbGVQcm9kdWN0TGlzdENhdGVnb3J5VGl0bGVCZWhhdmlvciI6InNob3dfb25faW1hZ2UiLCJtb2JpbGVQcm9kdWN0TGlzdENhdGVnb3J5Q2VsbFNwYWNpbmciOiIxMCIsInN0b3JlVmVyc2lvbiI6MiwidXNlU2VydmVyU2lkZVJlbmRlcmluZyI6dHJ1ZSwic2VydmVyU2lkZVJlbmRlcmluZ0h0bWwiOiI8ZGl2IGNsYXNzPVwic3RhdGljLWNvbnRlbnRcIj5cblxuXG48ZGl2IGNsYXNzPVwiZWN3aWRcIj5cbiAgICA8ZGl2IGNsYXNzPVwiZWMtc2l6ZSBlYy1zaXplLS14eHMgZWMtc2l6ZS0teHMgZWMtc2l6ZS0tcyBlYy1zaXplLS1tIGVjLXNpemUtLWwgZWMtc2l6ZS0teGwgZWN3aWQtbm8tdG91Y2ggZWN3aWQtc3VwcG9ydHMtY3NzYW5pbWF0aW9ucyBlY3dpZC1yZXNwb25zaXZlXCI+XG4gICAgICAgIDxkaXY+XG4gICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZWN3aWQtcHJvZHVjdEJyb3dzZXIgZWN3aWQtcHJvZHVjdEJyb3dzZXItUHJvZHVjdFBhZ2VcIj5cbiAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZWMtc3RvcmUgZWMtc3RvcmVfX3Byb2R1Y3QtcGFnZVwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImVjLXN0b3JlX19jb250ZW50LXdyYXBwZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzXCIgaXRlbXNjb3BlIGl0ZW10eXBlPVwiaHR0cDovL3NjaGVtYS5vcmcvUHJvZHVjdFwiPlxuICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzX19nYWxsZXJ5IGRldGFpbHMtZ2FsbGVyeVwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImRldGFpbHMtZ2FsbGVyeV9fd3JhcFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3dyYXAtaW5uZXIgZWMtc3RvcmVfX2V4Y2x1ZGVkLWZyb20tcHJvY2Vlc2luZy1lbGVtZW50XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX2ltYWdlcyBkZXRhaWxzLWdhbGxlcnlfX2ltYWdlcy0tYXNwZWN0LXJhdGlvLWF1dG9cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX2ltYWdlcy1jb250YWluZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X19pbWFnZXMtc3BhY2VyXCIgc3R5bGU9XCJtYXgtd2lkdGg6IDU3NHB4O1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X19pbWFnZXMtc3BhY2VyLWlubmVyXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZT1cInBhZGRpbmctdG9wOiAxMDYuMDk4JTtcIj48L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X19pbWFnZXMtY2Fyb3VzZWxcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImRldGFpbHMtZ2FsbGVyeV9faW1hZ2UgZGV0YWlscy1nYWxsZXJ5X19pbWFnZS0tYXNwZWN0LXJhdGlvLTFcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX2ltYWdlLXNwYWNlclwiPjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImRldGFpbHMtZ2FsbGVyeV9faW1hZ2Utd3JhcHBlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX2ltYWdlLXdyYXBwZXItaW5uZXJcIj48aW1nXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzcmM9XCJodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDg2MzAxLmpwZ1wiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0aXRsZT1cIjMvNCBNYXR0cmVzcyBQcm90ZWN0b3JcIiBhbHQ9XCIzLzQgTWF0dHJlc3MgUHJvdGVjdG9yXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X19waWN0dXJlIGRldGFpbHMtZ2FsbGVyeV9fcGhvdG9zd2lwZS1pbmRleC0wXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNyY3NldD1cImh0dHBzOi8vZDJqNmRicTBldXgwYmcuY2xvdWRmcm9udC5uZXQvaW1hZ2VzLzM2OTkyMDQzLzE2NjcwODYzMDEuanBnIDF4XCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGl0ZW1wcm9wPVwiaW1hZ2VcIj48L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImRldGFpbHMtZ2FsbGVyeV9fdGh1bWJzIGRldGFpbHMtZ2FsbGVyeV9fdGh1bWJzLS1wcmV2aWV3IGRldGFpbHMtZ2FsbGVyeV9fdGh1bWJzLS1hc3BlY3QtcmF0aW8tYXV0b1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImRldGFpbHMtZ2FsbGVyeV9fdGh1bWJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYi1zcGFjZXJcIj48L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYi1pbWctd3JhcHBlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYi1pbWctd3JhcHBlci1pbm5lciBkZXRhaWxzLWdhbGxlcnlfX3Bob3Rvc3dpcGUtdGh1bWItaW5kZXgtMFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3RodW1iLWltZ1wiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZT1cImJhY2tncm91bmQtaW1hZ2U6IHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDg2MzAzLmpwZyk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IC13ZWJraXQtaW1hZ2Utc2V0KHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDg2MzAzLmpwZykgMXgsIHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDg2MzAyLmpwZykgMngpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiAtbW96LWltYWdlLXNldCh1cmwoaHR0cHM6Ly9kMmo2ZGJxMGV1eDBiZy5jbG91ZGZyb250Lm5ldC9pbWFnZXMvMzY5OTIwNDMvMTY2NzA4NjMwMy5qcGcpIDF4LCB1cmwoaHR0cHM6Ly9kMmo2ZGJxMGV1eDBiZy5jbG91ZGZyb250Lm5ldC9pbWFnZXMvMzY5OTIwNDMvMTY2NzA4NjMwMi5qcGcpIDJ4KTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogLW8taW1hZ2Utc2V0KHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDg2MzAzLmpwZykgMXgsIHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDg2MzAyLmpwZykgMngpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiAtbXMtaW1hZ2Utc2V0KHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDg2MzAzLmpwZykgMXgsIHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDg2MzAyLmpwZykgMngpO1wiPlxuXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYi1zaGFkb3dcIj48L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3RodW1iLW1vcmVcIj4rMzwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImRldGFpbHMtZ2FsbGVyeV9fdGh1bWJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYi1zcGFjZXJcIj48L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYi1pbWctd3JhcHBlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYi1pbWctd3JhcHBlci1pbm5lclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGEgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3RodW1iLWltZ1wiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHlsZT1cImJhY2tncm91bmQtaW1hZ2U6IHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDkxODcyLmpwZyk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IC13ZWJraXQtaW1hZ2Utc2V0KHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDkxODcyLmpwZykgMXgsIHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDkxODcxLmpwZykgMngpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiAtbW96LWltYWdlLXNldCh1cmwoaHR0cHM6Ly9kMmo2ZGJxMGV1eDBiZy5jbG91ZGZyb250Lm5ldC9pbWFnZXMvMzY5OTIwNDMvMTY2NzA5MTg3Mi5qcGcpIDF4LCB1cmwoaHR0cHM6Ly9kMmo2ZGJxMGV1eDBiZy5jbG91ZGZyb250Lm5ldC9pbWFnZXMvMzY5OTIwNDMvMTY2NzA5MTg3MS5qcGcpIDJ4KTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogLW8taW1hZ2Utc2V0KHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDkxODcyLmpwZykgMXgsIHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDkxODcxLmpwZykgMngpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiAtbXMtaW1hZ2Utc2V0KHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDkxODcyLmpwZykgMXgsIHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDkxODcxLmpwZykgMngpO1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9hPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImRldGFpbHMtZ2FsbGVyeV9fdGh1bWItc2hhZG93XCI+PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYi1tb3JlXCI+PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3RodW1iLXNwYWNlclwiPjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3RodW1iLWltZy13cmFwcGVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3RodW1iLWltZy13cmFwcGVyLWlubmVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YSBjbGFzcz1cImRldGFpbHMtZ2FsbGVyeV9fdGh1bWItaW1nXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0eWxlPVwiYmFja2dyb3VuZC1pbWFnZTogdXJsKGh0dHBzOi8vZDJqNmRicTBldXgwYmcuY2xvdWRmcm9udC5uZXQvaW1hZ2VzLzM2OTkyMDQzLzE2NjcwOTU1NjAuanBnKTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogLXdlYmtpdC1pbWFnZS1zZXQodXJsKGh0dHBzOi8vZDJqNmRicTBldXgwYmcuY2xvdWRmcm9udC5uZXQvaW1hZ2VzLzM2OTkyMDQzLzE2NjcwOTU1NjAuanBnKSAxeCwgdXJsKGh0dHBzOi8vZDJqNmRicTBldXgwYmcuY2xvdWRmcm9udC5uZXQvaW1hZ2VzLzM2OTkyMDQzLzE2NjcwOTU1NTkuanBnKSAyeCk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IC1tb3otaW1hZ2Utc2V0KHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDk1NTYwLmpwZykgMXgsIHVybChodHRwczovL2QyajZkYnEwZXV4MGJnLmNsb3VkZnJvbnQubmV0L2ltYWdlcy8zNjk5MjA0My8xNjY3MDk1NTU5LmpwZykgMngpO1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiAtby1pbWFnZS1zZXQodXJsKGh0dHBzOi8vZDJqNmRicTBldXgwYmcuY2xvdWRmcm9udC5uZXQvaW1hZ2VzLzM2OTkyMDQzLzE2NjcwOTU1NjAuanBnKSAxeCwgdXJsKGh0dHBzOi8vZDJqNmRicTBldXgwYmcuY2xvdWRmcm9udC5uZXQvaW1hZ2VzLzM2OTkyMDQzLzE2NjcwOTU1NTkuanBnKSAyeCk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGJhY2tncm91bmQtaW1hZ2U6IC1tcy1pbWFnZS1zZXQodXJsKGh0dHBzOi8vZDJqNmRicTBldXgwYmcuY2xvdWRmcm9udC5uZXQvaW1hZ2VzLzM2OTkyMDQzLzE2NjcwOTU1NjAuanBnKSAxeCwgdXJsKGh0dHBzOi8vZDJqNmRicTBldXgwYmcuY2xvdWRmcm9udC5uZXQvaW1hZ2VzLzM2OTkyMDQzLzE2NjcwOTU1NTkuanBnKSAyeCk7XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2E+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZGV0YWlscy1nYWxsZXJ5X190aHVtYi1zaGFkb3dcIj48L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3RodW1iLW1vcmVcIj48L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3Njcm9sbFwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3Njcm9sbC1kb3QtY29udGFpbmVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3Njcm9sbC1kb3QgZWMtdGV4dC1tdXRlZCBkZXRhaWxzLWdhbGxlcnlfX3Njcm9sbC1kb3QtLWFjdGl2ZVwiPjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3Njcm9sbC1kb3QtY29udGFpbmVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3Njcm9sbC1kb3QgZWMtdGV4dC1tdXRlZFwiPjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3Njcm9sbC1kb3QtY29udGFpbmVyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLWdhbGxlcnlfX3Njcm9sbC1kb3QgZWMtdGV4dC1tdXRlZFwiPjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzX19zaWRlYmFyXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aDEgY2xhc3M9XCJwcm9kdWN0LWRldGFpbHNfX3Byb2R1Y3QtdGl0bGUgZWMtaGVhZGVyLWgzXCIgaXRlbXByb3A9XCJuYW1lXCI+My80IE1hdHRyZXNzIFByb3RlY3RvcjwvaDE+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzX19wcm9kdWN0LXNrdSBlYy10ZXh0LW11dGVkXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaXRlbXByb3A9XCJza3VcIj5TS1UgTVAwMDI8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bWV0YSBpdGVtcHJvcD1cIml0ZW1Db25kaXRpb25cIiBjb250ZW50PVwiaHR0cDovL3NjaGVtYS5vcmcvTmV3Q29uZGl0aW9uXCIgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJwcm9kdWN0LWRldGFpbHMtbW9kdWxlIHByb2R1Y3QtZGV0YWlsc19fcHJvZHVjdC1wcmljZS1yb3dcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzLW1vZHVsZV9fY29udGVudFwiIGl0ZW1wcm9wPVwib2ZmZXJzXCIgaXRlbXNjb3BlIGl0ZW10eXBlPVwiaHR0cDovL3NjaGVtYS5vcmcvT2ZmZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaW5rIGl0ZW1wcm9wPVwiYXZhaWxhYmlsaXR5XCIgaHJlZj1cImh0dHA6Ly9zY2hlbWEub3JnL0luU3RvY2tcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxsaW5rIGl0ZW1wcm9wPVwidXJsXCIgaHJlZj1cImh0dHBzOi8vd3d3LmJmaGZ1cm5pdHVyZS5jby56YS9zdG9yZS8zLTQtTWF0dHJlc3MtUHJvdGVjdG9yLXAyMzcyODA2MTJcIiAvPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBpdGVtcHJvcD1cInNlbGxlclwiIGl0ZW10eXBlPVwiaHR0cDovL3NjaGVtYS5vcmcvT3JnYW5pemF0aW9uXCIgaXRlbXNjb3BlPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxtZXRhIGl0ZW1wcm9wPVwibmFtZVwiIGNvbnRlbnQ9XCJCRkggRnVybml0dXJlXCIgLz5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzX19wcm9kdWN0LXByaWNlIGVjLXByaWNlLWl0ZW1cIiBpdGVtcHJvcD1cInByaWNlXCIgY29udGVudD1cIjQ0OVwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPG1ldGEgaXRlbXByb3A9XCJwcmljZUN1cnJlbmN5XCIgY29udGVudD1cIlpBUlwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9XCJkZXRhaWxzLXByb2R1Y3QtcHJpY2VfX3ZhbHVlIGVjLXByaWNlLWl0ZW0gbm90cmFuc2xhdGVcIj5SNDQ5LjAwPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInByb2R1Y3QtZGV0YWlsc19fcHJvZHVjdC1vcHRpb25zIGRldGFpbHMtcHJvZHVjdC1vcHRpb25zXCI+PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzLW1vZHVsZSBwcm9kdWN0LWRldGFpbHNfX2FjdGlvbi1wYW5lbCBkZXRhaWxzLXByb2R1Y3QtcHVyY2hhc2VcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzLW1vZHVsZV9fdGl0bGUgZWMtaGVhZGVyLWg2IGRldGFpbHMtcHJvZHVjdC1wdXJjaGFzZV9fcGxhY2Ugbm90cmFuc2xhdGVcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4+SW4gc3RvY2s8L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInByb2R1Y3QtZGV0YWlscy1tb2R1bGVfX2NvbnRlbnQgcHJvZHVjdC1kZXRhaWxzLW1vZHVsZV9fY29udGVudC0taW5kZW50ZWRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImRldGFpbHMtcHJvZHVjdC1wdXJjaGFzZV9fcXR5XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8bGFiZWwgZm9yPVwicXR5LWZpZWxkXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9XCJkZXRhaWxzLXByb2R1Y3QtcHVyY2hhc2VfX3F0eS1sYWJlbCBub3RyYW5zbGF0ZVwiPlF1YW50aXR5Ojwvc3Bhbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvbGFiZWw+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZm9ybS1jb250cm9sIGZvcm0tY29udHJvbC0tZW1wdHkgZGV0YWlscy1wcm9kdWN0LXB1cmNoYXNlX19xdHktZmllbGRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8aW5wdXQgaWQ9XCJxdHktZmllbGRcIiBjbGFzcz1cImZvcm0tY29udHJvbF9fdGV4dFwiIG5hbWU9XCJlYy1xdHlcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBtYXhsZW5ndGg9XCIxMFwiIG1pbj1cIjFcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBwYXR0ZXJuPVwiXFxkKlwiIHR5cGU9XCJudW1iZXJcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZm9ybS1jb250cm9sX19wbGFjZWhvbGRlclwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiZm9ybS1jb250cm9sX19wbGFjZWhvbGRlci1pbm5lclwiPjE8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImRldGFpbHMtcHJvZHVjdC1wdXJjaGFzZV9fY29udHJvbHNcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLXByb2R1Y3QtcHVyY2hhc2VfX2JhZy1jb250cm9sc1wiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJkZXRhaWxzLXByb2R1Y3QtcHVyY2hhc2VfX2FkZC1idXR0b25zXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmb3JtLWNvbnRyb2wgZm9ybS1jb250cm9sLS1idXR0b24gZm9ybS1jb250cm9sLS1sYXJnZSBmb3JtLWNvbnRyb2wtLXByaW1hcnkgZm9ybS1jb250cm9sLS1mbGV4aWJsZSBmb3JtLWNvbnRyb2wtLWFuaW1hdGVkIGRldGFpbHMtcHJvZHVjdC1wdXJjaGFzZV9fYWRkLXRvLWJhZyBmb3JtLWNvbnRyb2xfX2J1dHRvbi0taWNvbi1jZW50ZXIgZm9ybS1jb250cm9sLS1kb25lXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8YnV0dG9uIGNsYXNzPVwiZm9ybS1jb250cm9sX19idXR0b25cIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB0eXBlPVwiYnV0dG9uXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cImZvcm0tY29udHJvbF9fbG9hZGVyXCI+PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPHNwYW4gY2xhc3M9XCJmb3JtLWNvbnRyb2xfX2J1dHRvbi10ZXh0XCI+QWRkIHRvIEJhZzwvc3Bhbj48c3BhblxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBjbGFzcz1cImZvcm0tY29udHJvbF9fYnV0dG9uLXN2Z1wiPjxzcGFuXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzPVwic3ZnLWljb25cIj48c3ZnXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoPVwiMjdcIiBoZWlnaHQ9XCIyM1wiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZpZXdCb3g9XCIwIDAgMjcgMjNcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCI+PHBhdGhcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgY2xhc3M9XCJzdmctbGluZS1jaGVja1wiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGQ9XCJNMS45NyAxMS45NEwxMC4wMyAyMCAyNS4yMTcgMlwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0cm9rZT1cImN1cnJlbnRDb2xvclwiXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHN0cm9rZS13aWR0aD1cIjNcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzdHJva2UtbGluZWNhcD1cInJvdW5kXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZmlsbD1cIm5vbmVcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBmaWxsLXJ1bGU9XCJldmVub2RkXCI+PC9wYXRoPjwvc3ZnPjwvc3Bhbj48L3NwYW4+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2J1dHRvbj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cblxuICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInByb2R1Y3QtZGV0YWlscy1tb2R1bGUgcHJvZHVjdC1kZXRhaWxzX19nZW5lcmFsLWluZm9cIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzLW1vZHVsZV9fdGl0bGUgZWMtaGVhZGVyLWg2XCI+UHJvZHVjdCBEZXRhaWxzPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInByb2R1Y3QtZGV0YWlscy1tb2R1bGVfX2NvbnRlbnRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInByb2R1Y3QtZGV0YWlsc19fcHJvZHVjdC1kZXNjcmlwdGlvblwiIGlkPVwicHJvZHVjdERlc2NyaXB0aW9uXCIgaXRlbXByb3A9XCJkZXNjcmlwdGlvblwiPlxuXHRcdFx0XHRcdFx0XHRcdFx0PGRpdj5cblx0XHRcdFx0XHRcdFx0XHRcdDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwicHJvZHVjdC1kZXRhaWxzLW1vZHVsZSBwcm9kdWN0LWRldGFpbHNfX3Byb2R1Y3QtbGlrZSBmYXZvcml0ZS1wcm9kdWN0XCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz1cInByb2R1Y3QtZGV0YWlscy1tb2R1bGVfX3RpdGxlIGVjLWhlYWRlci1oNiBmYXZvcml0ZS1wcm9kdWN0X190aXRsZVwiPlNhdmUgdGhpcyBwcm9kdWN0IGZvciBsYXRlcjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJwcm9kdWN0LWRldGFpbHMtbW9kdWxlX19jb250ZW50IHByb2R1Y3QtZGV0YWlscy1tb2R1bGVfX2NvbnRlbnQtLWluZGVudGVkXCI+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmb3JtLWNvbnRyb2wgZm9ybS1jb250cm9sLS1idXR0b24gZm9ybS1jb250cm9sLS1tZWRpdW0gZm9ybS1jb250cm9sLS1zZWNvbmRhcnkgZm9ybS1jb250cm9sLS1kb25lIGZhdm9yaXRlLXByb2R1Y3RfX2J1dHRvbi1hZGRcIj5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxidXR0b24gY2xhc3M9XCJmb3JtLWNvbnRyb2xfX2J1dHRvbiBmb3JtLWNvbnRyb2xfX2J1dHRvbi0taWNvbi1wcmVwZW5kXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdHlwZT1cImJ1dHRvblwiPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9XCJmb3JtLWNvbnRyb2xfX2xvYWRlclwiPjwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzPVwiZm9ybS1jb250cm9sX19idXR0b24tc3ZnXCI+PHNwYW5cbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzPVwic3ZnLWljb25cIj48c3ZnIHdpZHRoPVwiMTJcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGhlaWdodD1cIjExXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2aWV3Qm94PVwiMCAwIDEyIDExXCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB4bWxucz1cImh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnXCI+PHBhdGhcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGQ9XCJNMTEuMTQzIDMuNzA1YzAtMS44OC0xLjI3Mi0yLjI3Ni0yLjM0NC0yLjI3Ni0xIDAtMi4xMjQgMS4wNzctMi40NzIgMS40OTItLjE2LjE5NC0uNDk1LjE5NC0uNjU2IDBDNS4zMjQgMi41MDcgNC4yIDEuNDMgMy4yMDIgMS40M2MtMS4wNzMgMC0yLjM0NS4zOTQtMi4zNDUgMi4yNzUgMCAxLjIyNiAxLjI0IDIuMzY0IDEuMjUyIDIuMzc4TDYgOS44MzMgOS44ODQgNi4wOWMuMDItLjAyIDEuMjYtMS4xNiAxLjI2LTIuMzg1em0uODU3IDBjMCAxLjYwNy0xLjQ3MyAyLjk1My0xLjUzMyAzLjAxNGwtNC4xNzIgNC4wMTdjLS4wOC4wOC0uMTg4LjEyLS4yOTUuMTItLjEwNyAwLS4yMTQtLjA0LS4yOTUtLjEyTDEuNTI3IDYuNzA1QzEuNDczIDYuNjU4IDAgNS4zMTIgMCAzLjcwNSAwIDEuNzQzIDEuMi41NyAzLjIuNTdjMS4xNzMgMCAyLjI3LjkyNiAyLjggMS40NDhDNi41MyAxLjQ5NiA3LjYyNy41NyA4LjguNTdjMiAwIDMuMiAxLjE3MyAzLjIgMy4xMzV6XCJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZpbGw9XCJjdXJyZW50Q29sb3JcIlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZmlsbC1ydWxlPVwiZXZlbm9kZFwiPjwvcGF0aD48L3N2Zz48L3NwYW4+PC9zcGFuPjxzcGFuXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNsYXNzPVwiZm9ybS1jb250cm9sX19idXR0b24tdGV4dFwiPkZhdm9yaXRlPC9zcGFuPlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9idXR0b24+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPVwiY2xlYXJib3RoXCI+PC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG5cblxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICAgPC9kaXY+XG4gICAgICAgIDwvZGl2PlxuICAgIDwvZGl2PlxuPC9kaXY+XG48L2Rpdj4iLCJzZXJ2ZXJTaWRlUmVuZGVyaW5nQ3NzIjpbImh0dHBzOi8vZDFveHNsNzdhMWtqaHQuY2xvdWRmcm9udC5uZXQvY3NzL25ldz9oYz0xMTMzNDcxNjAzJm93bmVyaWQ9MzY5OTIwNDMmZnJvbnRlbmRWMj10cnVlJnBzd3BOYXRpdmU9dHJ1ZSJdLCJpc1JlZGlyZWN0U2VhcmNoUmVzdWx0cyI6dHJ1ZX0="> <div id="my-store-36992043" class="xProductBrowser" data-store-version="2" data-cat-per-row="3" data-search-view="grid" data-category-view="grid" data-id="36992043" data-views="grid(3,3) list(10) table(20)" data-initial-store-screen="CATEGORY@@60486211" data-show-breadcrumbs="true" data-product-list-image-size="medium" data-product-list-image-aspect-ratio="square_1" data-product-list-image-has-shadow="false" data-product-list-show-additional-image-on-hover="true" data-product-list-show-frame="false" data-product-list-product-info-layout="center" data-product-list-title-behavior="show_on_hover" data-product-list-sku-behavior="hide" data-product-list-price-behavior="show_on_hover" data-product-list-buybutton-behavior="show_on_hover" data-product-list-cell-spacing="15" data-product-list-category-image-size="large" data-product-list-category-image-aspect-ratio="landscape_1333" data-product-list-category-title-behavior="show_on_hover" data-product-list-category-cell-spacing="5" data-enable-simple-category-list="false" data-breadcrumbs-separator="" data-show-signin-link="" data-show-footer-menu="" data-product-list-show-sort-viewas-options="" data-product-details-show-qty="false" data-product-details-show-in-stock-label="false" data-product-details-show-product-name="" data-product-details-show-number-of-items-in-stock="false" data-product-details-show-save-for-later="" data-product-details-show-buy-button="" data-product-details-show-product-price="" data-product-details-show-sale-price="" data-product-details-show-price-per-unit="" data-product-details-show-tax="false" data-product-details-show-product-options="true" data-product-details-show-product-sku="" data-product-details-show-wholesale-prices="false" data-product-details-show-share-buttons="true" data-product-details-layout="TWO_COLUMNS_SIDEBAR_ON_THE_RIGHT" data-product-details-gallery-layout="IMAGE_SINGLE_THUMBNAILS_VERTICAL" data-product-details-thumbnails_aspect_ratio="square_1" data-product-details-two-columns-with-left-sidebar-show_product-description-on-sidebar="data-product-details-two-columns-with-right-sidebar-show-product-description-on-sidebar=" data-mobile-product-list-category-cell-spacing="10" data-mobile-product-list-category-title-behavior="show_on_image" data-mobile-product-list-cell-spacing="" data-mobile-product-list-title-behavior="" data-mobile-product-list-sku-behavior="hide" data-mobile-product-list-price-behavior="" data-mobile-product-list-buybutton-behavior=""> <div id="static-product-browser"> <div class="static-content"> <div class="ecwid"> <div class="ec-size ec-size--xxs ec-size--xs ec-size--s ec-size--m ec-size--l ec-size--xl ecwid-no-touch ecwid-supports-cssanimations ecwid-responsive"> <div> <div class="ecwid-productBrowser ecwid-productBrowser-ProductPage"> <div> <div> <div> <div> <div class="ec-store ec-store__product-page"> <div class="ec-store__content-wrapper"> <div class="product-details" itemscope="" itemtype="http://schema.org/Product"> <div class="product-details__gallery details-gallery"> <div class="details-gallery__wrap"> <div class="details-gallery__wrap-inner ec-store__excluded-from-proceesing-element"> <div class="details-gallery__images details-gallery__images--aspect-ratio-auto"> <div class="details-gallery__images-container"> <div class="details-gallery__images-spacer" style="max-width: 574px;"> <div class="details-gallery__images-spacer-inner" style="padding-top: 106.098%;"></div> 
+</div> 
+ <div class="details-gallery__images-carousel"> <div class="details-gallery__image details-gallery__image--aspect-ratio-1"> <div class="details-gallery__image-spacer"></div> 
+ <div class="details-gallery__image-wrapper"> <div class="details-gallery__image-wrapper-inner"><img src="https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086301.jpg" title="3/4 Mattress Protector" alt="3/4 Mattress Protector" class="details-gallery__picture details-gallery__photoswipe-index-0" srcset="https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086301.jpg 1x" itemprop="image" onerror="handleImageLoadError(this)"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="details-gallery__thumbs details-gallery__thumbs--preview details-gallery__thumbs--aspect-ratio-auto"> <div class="details-gallery__thumb"> <div class="details-gallery__thumb-spacer"></div> 
+ <div class="details-gallery__thumb-img-wrapper"> <div class="details-gallery__thumb-img-wrapper-inner details-gallery__photoswipe-thumb-index-0"> <a class="details-gallery__thumb-img" style="background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086303.jpg);
+                                                           background-image: -webkit-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086303.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086302.jpg) 2x);
+                                                           background-image: -moz-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086303.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086302.jpg) 2x);
+                                                           background-image: -o-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086303.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086302.jpg) 2x);
+                                                           background-image: -ms-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086303.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667086302.jpg) 2x);"></a> 
+ <div class="details-gallery__thumb-shadow"></div> 
+ <div class="details-gallery__thumb-more">+3</div> 
+</div> 
+</div> 
+</div> 
+ <div class="details-gallery__thumb"> <div class="details-gallery__thumb-spacer"></div> 
+ <div class="details-gallery__thumb-img-wrapper"> <div class="details-gallery__thumb-img-wrapper-inner"> <a class="details-gallery__thumb-img" style="background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091872.jpg);
+                                                           background-image: -webkit-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091872.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091871.jpg) 2x);
+                                                           background-image: -moz-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091872.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091871.jpg) 2x);
+                                                           background-image: -o-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091872.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091871.jpg) 2x);
+                                                           background-image: -ms-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091872.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667091871.jpg) 2x);"></a> 
+ <div class="details-gallery__thumb-shadow"></div> 
+ <div class="details-gallery__thumb-more"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="details-gallery__thumb"> <div class="details-gallery__thumb-spacer"></div> 
+ <div class="details-gallery__thumb-img-wrapper"> <div class="details-gallery__thumb-img-wrapper-inner"> <a class="details-gallery__thumb-img" style="background-image: url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095560.jpg);
+                                                           background-image: -webkit-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095560.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095559.jpg) 2x);
+                                                           background-image: -moz-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095560.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095559.jpg) 2x);
+                                                           background-image: -o-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095560.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095559.jpg) 2x);
+                                                           background-image: -ms-image-set(url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095560.jpg) 1x, url(https://d2j6dbq0eux0bg.cloudfront.net/images/36992043/1667095559.jpg) 2x);"></a> 
+ <div class="details-gallery__thumb-shadow"></div> 
+ <div class="details-gallery__thumb-more"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="details-gallery__scroll"> <div class="details-gallery__scroll-dot-container"> <div class="details-gallery__scroll-dot ec-text-muted details-gallery__scroll-dot--active"></div> 
+</div> 
+ <div class="details-gallery__scroll-dot-container"> <div class="details-gallery__scroll-dot ec-text-muted"></div> 
+</div> 
+ <div class="details-gallery__scroll-dot-container"> <div class="details-gallery__scroll-dot ec-text-muted"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="product-details__sidebar"> <h1 class="product-details__product-title ec-header-h3" itemprop="name">3/4 Mattress Protector</h1> 
+ <div class="product-details__product-sku ec-text-muted" itemprop="sku">SKU MP002</div> 
+ <meta itemprop="itemCondition" content="http://schema.org/NewCondition"></meta> 
+ <div class="product-details-module product-details__product-price-row"> <div class="product-details-module__content" itemprop="offers" itemscope="" itemtype="http://schema.org/Offer"><link itemprop="availability" href="http://schema.org/InStock"/><link itemprop="url" href="3-4-Mattress-Protector-p237280612.html"/> <div itemprop="seller" itemtype="http://schema.org/Organization" itemscope=""> <meta itemprop="name" content="BFH Furniture"></meta> 
+</div> 
+ <div class="product-details__product-price ec-price-item" itemprop="price" content="449"> <meta itemprop="priceCurrency" content="ZAR"></meta> 
+ <span class="details-product-price__value ec-price-item notranslate">R449.00</span> 
+</div> 
+</div> 
+</div> 
+ <div class="product-details__product-options details-product-options"></div> 
+ <div class="product-details-module product-details__action-panel details-product-purchase"> <div class="product-details-module__title ec-header-h6 details-product-purchase__place notranslate"> <span>In stock</span> 
+</div> 
+ <div class="product-details-module__content product-details-module__content--indented"> <div class="details-product-purchase__qty"> <label for="qty-field"> <span class="details-product-purchase__qty-label notranslate">Quantity:</span> 
+</label> 
+ <div class="form-control form-control--empty details-product-purchase__qty-field"><input id="qty-field" class="form-control__text" name="ec-qty" maxlength="10" min="1" pattern="\d*" type="number"/> <div class="form-control__placeholder"> <div class="form-control__placeholder-inner">1</div> 
+</div> 
+</div> 
+</div> 
+ <div class="details-product-purchase__controls"> <div class="details-product-purchase__bag-controls"> <div class="details-product-purchase__add-buttons"> <div class="form-control form-control--button form-control--large form-control--primary form-control--flexible form-control--animated details-product-purchase__add-to-bag form-control__button--icon-center form-control--done"> <button class="form-control__button" type="button"> <div class="form-control__loader"></div> 
+ <span class="form-control__button-text">Add to Bag</span> 
+ <span class="form-control__button-svg"> <span class="svg-icon"> <svg width="27" height="23" viewbox="0 0 27 23" xmlns="http://www.w3.org/2000/svg"> <path class="svg-line-check" d="M1.97 11.94L10.03 20 25.217 2" stroke="currentColor" stroke-width="3" stroke-linecap="round" fill="none" fill-rule="evenodd"></path> 
+</svg> 
+</span> 
+</span> 
+</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="product-details-module product-details__general-info"> <div class="product-details-module__title ec-header-h6">Product Details</div> 
+ <div class="product-details-module__content"> <div class="product-details__product-description" id="productDescription" itemprop="description"> <div></div> 
+</div> 
+</div> 
+</div> 
+ <div class="product-details-module product-details__product-like favorite-product"> <div class="product-details-module__title ec-header-h6 favorite-product__title">Save this product for later</div> 
+ <div class="product-details-module__content product-details-module__content--indented"> <div class="form-control form-control--button form-control--medium form-control--secondary form-control--done favorite-product__button-add"> <button class="form-control__button form-control__button--icon-prepend" type="button"> <div class="form-control__loader"></div> 
+ <span class="form-control__button-svg"> <span class="svg-icon"> <svg width="12" height="11" viewbox="0 0 12 11" xmlns="http://www.w3.org/2000/svg"> <path d="M11.143 3.705c0-1.88-1.272-2.276-2.344-2.276-1 0-2.124 1.077-2.472 1.492-.16.194-.495.194-.656 0C5.324 2.507 4.2 1.43 3.202 1.43c-1.073 0-2.345.394-2.345 2.275 0 1.226 1.24 2.364 1.252 2.378L6 9.833 9.884 6.09c.02-.02 1.26-1.16 1.26-2.385zm.857 0c0 1.607-1.473 2.953-1.533 3.014l-4.172 4.017c-.08.08-.188.12-.295.12-.107 0-.214-.04-.295-.12L1.527 6.705C1.473 6.658 0 5.312 0 3.705 0 1.743 1.2.57 3.2.57c1.173 0 2.27.926 2.8 1.448C6.53 1.496 7.627.57 8.8.57c2 0 3.2 1.173 3.2 3.135z" fill="currentColor" fill-rule="evenodd"></path> 
+</svg> 
+</span> 
+</span> 
+ <span class="form-control__button-text">Favorite</span> 
+</button> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="clearboth"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+<link rel="stylesheet" type="text/css" href="https://d1oxsl77a1kjht.cloudfront.net/css/new?hc=1133471603&amp;ownerid=36992043&amp;frontendV2=true&amp;pswpNative=true"/></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1394865387 dmRespRow fullBleedChanged fullBleedMode" id="1394865387"> <div class="dmRespColsWrapper" id="1320112828"> <div class="dmRespCol large-12 medium-12 small-12 u_1148615772" id="1148615772"> <h3 class="u_1370922509 dmNewParagraph" data-element-type="paragraph" id="1370922509" style="transition: opacity 1s ease-in-out 0s;" data-uialign="center"><span class="font-size-30 lh-1"><font style="color: rgb(0, 0, 0);"><span style="font-weight: 700; font-family: 'Playfair Display'; font-style: normal;" class="m-font-size-36 lh-1 font-size-60">Bed Dimensions</span></font></span></h3> <div class="u_1041075399 widget-7b2ba5 dmCustomWidget" data-lazy-load="" id="1041075399" dmle_extension="custom_extension" data-element-type="custom_extension" wr="false" icon="false" surround="false" data-widget-id="7b2ba547771b4d4db17e3e2b9f0abd0c" data-widget-version="210" data-widget-config="eyJ0YWJzIjpbeyJpbWFnZSI6Imh0dHBzOi8vaXJwLWNkbi5tdWx0aXNjcmVlbnNpdGUuY29tLzRhNTNhZTA1L2RtczNyZXAvbXVsdGkvU2luZ2xlX2lsbHVzdHJhdGlvbi5qcGciLCJpdGVtTGFiZWwiOiJTaW5nbGUgQmVkIiwiaXRlbVRpdGxlIjoiRGltZW5zaW9ucyIsIml0ZW1EZXNjIjoiPHVsIGNsYXNzPVwicnRlQmxvY2sgZGVmYXVsdExpc3RcIj48bGk+U2FuZGFyZCBMZW5ndGg6IDkxY20geCAxODhjbTwvbGk+PGxpPkV4dHJhIExlbmd0aDogOTFjbSB4IDIwMGNtPC9saT48L3VsPiIsInNob3dCdG4iOnRydWUsInRleHRPbkxpbmsiOiJWaWV3IE5vdyIsImxpbmsiOnsidmFsdWUiOiJzdG9yZS8jIS9+L2NhdGVnb3J5L2lkPTYwNTAwMTQ4IiwibGFiZWwiOiIiLCJ0eXBlIjoicHJvZHVjdCIsImhyZWYiOiIvc3RvcmUvIyEvfi9jYXRlZ29yeS9pZD02MDUwMDE0OCIsInJhd191cmwiOiIvc2l0ZS80YTUzYWUwNS9zdG9yZS8/bmVlPXRydWUmZWQ9dHJ1ZSZzaG93T3JpZ2luYWw9dHJ1ZSZwcmV2aWV3PXRydWUmZG1fdHJ5X21vZGU9dHJ1ZSZkbV9jaGVja1N5bmM9MSMhL34vY2F0ZWdvcnkvaWQ9NjA1MDAxNDgifX0seyJpbWFnZSI6Imh0dHBzOi8vaXJwLWNkbi5tdWx0aXNjcmVlbnNpdGUuY29tLzRhNTNhZTA1L2RtczNyZXAvbXVsdGkvMzRfaWxsdXN0cmF0aW9uLmpwZyIsIml0ZW1MYWJlbCI6IjMvNCBCZWQgIiwiaXRlbVRpdGxlIjoiRGltZW5zaW9ucyIsIml0ZW1EZXNjIjoiPHVsIGNsYXNzPVwicnRlQmxvY2sgZGVmYXVsdExpc3RcIj48bGk+U2FuZGFyZCBMZW5ndGg6IDEwN2NtIHggMTg4Y208L2xpPjxsaT5FeHRyYSBMZW5ndGg6IDEwN2NtIHggMjAwY208L2xpPjwvdWw+Iiwic2hvd0J0biI6dHJ1ZSwidGV4dE9uTGluayI6IlZpZXcgTm93IiwibGluayI6eyJ2YWx1ZSI6InN0b3JlLyMhL34vY2F0ZWdvcnkvaWQ9NjA0ODYyMTIiLCJsYWJlbCI6IiIsInR5cGUiOiJwcm9kdWN0IiwiaHJlZiI6Ii9zdG9yZS8jIS9+L2NhdGVnb3J5L2lkPTYwNDg2MjEyIiwicmF3X3VybCI6Ii9zaXRlLzRhNTNhZTA1L3N0b3JlLz9uZWU9dHJ1ZSZlZD10cnVlJnNob3dPcmlnaW5hbD10cnVlJnByZXZpZXc9dHJ1ZSZkbV90cnlfbW9kZT10cnVlJmRtX2NoZWNrU3luYz0xIyEvfi9jYXRlZ29yeS9pZD02MDQ4NjIxMiJ9fSx7ImltYWdlIjoiaHR0cHM6Ly9pcnAtY2RuLm11bHRpc2NyZWVuc2l0ZS5jb20vNGE1M2FlMDUvZG1zM3JlcC9tdWx0aS9Eb3VibGVfaWxsdXN0cmF0aW9uLmpwZyIsIml0ZW1MYWJlbCI6IkRvdWJsZSBCZWQiLCJpdGVtVGl0bGUiOiJEaW1lbnNpb25zIiwiaXRlbURlc2MiOiI8dWwgY2xhc3M9XCJydGVCbG9jayBkZWZhdWx0TGlzdFwiPjxsaT5TYW5kYXJkIExlbmd0aDogMTM3Y20geCAxODhjbTwvbGk+PGxpPkV4dHJhIExlbmd0aDogMTM3Y20geCAyMDBjbTwvbGk+PC91bD4iLCJzaG93QnRuIjp0cnVlLCJ0ZXh0T25MaW5rIjoiVmlldyBOb3ciLCJsaW5rIjp7InZhbHVlIjoic3RvcmUvIyEvfi9jYXRlZ29yeS9pZD02MDQ5OTE1NSIsImxhYmVsIjoiIiwidHlwZSI6InByb2R1Y3QiLCJocmVmIjoiL3N0b3JlLyMhL34vY2F0ZWdvcnkvaWQ9NjA0OTkxNTUiLCJyYXdfdXJsIjoiL3NpdGUvNGE1M2FlMDUvc3RvcmUvP25lZT10cnVlJmVkPXRydWUmc2hvd09yaWdpbmFsPXRydWUmcHJldmlldz10cnVlJmRtX3RyeV9tb2RlPXRydWUmZG1fY2hlY2tTeW5jPTEjIS9+L2NhdGVnb3J5L2lkPTYwNDk5MTU1In19LHsiaW1hZ2UiOiJodHRwczovL2lycC1jZG4ubXVsdGlzY3JlZW5zaXRlLmNvbS80YTUzYWUwNS9kbXMzcmVwL211bHRpL1F1ZWVuX2lsbHVzdHJhdGlvbi5qcGciLCJpdGVtTGFiZWwiOiJRdWVlbiBCZWQiLCJpdGVtVGl0bGUiOiJEaW1lbnNpb25zIiwiaXRlbURlc2MiOiI8dWwgY2xhc3M9XCJydGVCbG9jayBkZWZhdWx0TGlzdFwiPjxsaT5TYW5kYXJkIExlbmd0aDogMTUyY20geCAxODhjbTwvbGk+PGxpPkV4dHJhIExlbmd0aDogMTUyY20geCAyMDBjbTwvbGk+PC91bD4iLCJzaG93QnRuIjp0cnVlLCJ0ZXh0T25MaW5rIjoiVmlldyBOb3ciLCJsaW5rIjp7InZhbHVlIjoic3RvcmUvIyEvfi9jYXRlZ29yeS9pZD02MDUwMDE0OSIsImxhYmVsIjoiIiwidHlwZSI6InByb2R1Y3QiLCJocmVmIjoiL3N0b3JlLyMhL34vY2F0ZWdvcnkvaWQ9NjA1MDAxNDkiLCJyYXdfdXJsIjoiL3NpdGUvNGE1M2FlMDUvc3RvcmUvP25lZT10cnVlJmVkPXRydWUmc2hvd09yaWdpbmFsPXRydWUmcHJldmlldz10cnVlJmRtX3RyeV9tb2RlPXRydWUmZG1fY2hlY2tTeW5jPTEjIS9+L2NhdGVnb3J5L2lkPTYwNTAwMTQ5In19LHsiaW1hZ2UiOiJodHRwczovL2lycC1jZG4ubXVsdGlzY3JlZW5zaXRlLmNvbS80YTUzYWUwNS9kbXMzcmVwL211bHRpL0tpbmdfaWxsdXN0cmF0aW9uLmpwZyIsIml0ZW1MYWJlbCI6IktpbmcgQmVkIiwiaXRlbVRpdGxlIjoiRGltZW5zaW9ucyIsIml0ZW1EZXNjIjoiPHVsIGNsYXNzPVwicnRlQmxvY2sgZGVmYXVsdExpc3RcIj48bGk+U2FuZGFyZCBMZW5ndGg6IDE4MmNtIHggMTg4Y208L2xpPjxsaT5FeHRyYSBMZW5ndGg6IDE4MmNtIHggMjAwY208L2xpPjwvdWw+Iiwic2hvd0J0biI6dHJ1ZSwidGV4dE9uTGluayI6IlZpZXcgTm93IiwibGluayI6eyJ2YWx1ZSI6InN0b3JlLyMhL34vY2F0ZWdvcnkvaWQ9NjA0OTkxNTYiLCJsYWJlbCI6IiIsInR5cGUiOiJwcm9kdWN0IiwiaHJlZiI6Ii9zdG9yZS8jIS9+L2NhdGVnb3J5L2lkPTYwNDk5MTU2IiwicmF3X3VybCI6Ii9zaXRlLzRhNTNhZTA1L3N0b3JlLz9uZWU9dHJ1ZSZlZD10cnVlJnNob3dPcmlnaW5hbD10cnVlJnByZXZpZXc9dHJ1ZSZkbV90cnlfbW9kZT10cnVlJmRtX2NoZWNrU3luYz0xIyEvfi9jYXRlZ29yeS9pZD02MDQ5OTE1NiJ9fV0sInNob3dJbWFnZXMiOnRydWUsImxheW91dHMiOiJsYXlvdXQtYSIsIm1vYmlsZUxheW91dFRvZ2dsZSI6ZmFsc2UsImZ1bGxXaWR0aEltZyI6dHJ1ZX0="> <div class="wrapper layout-a"> <nav class="nav desktop  swipe-menu "> <div class="tab-label active layout-a "> <h4 class="horizontal-label">Single Bed</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">3/4 Bed</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">Double Bed</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">Queen Bed</h4> 
+</div> 
+ <div class="tab-label  layout-a not-active"> <h4 class="horizontal-label">King Bed</h4> 
+</div> 
+</nav> 
+ <div class="tab layout-a active 
+                "> <div class="image-container layout-a" style="background-image: url('https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/Single_illustration.jpg');"><img src="https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/Single_illustration-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class="">Dimensions</p> 
+</div> 
+ <p></p> 
+ <ul class="rteBlock defaultList"> <li>Sandard Length: 91cm x 188cm</li> 
+ <li>Extra Length: 91cm x 200cm</li> 
+</ul> 
+ <p></p> 
+</div> 
+ <div class="btn-container "> <a class="dmWidget button-class" value="store/#!/~/category/id=60500148" label="" type="product" href="index.html#!/~/category/id=60500148" raw_url="/site/4a53ae05/store/?nee=true&ed=true&showOriginal=true&preview=true&dm_try_mode=true&dm_checkSync=1#!/~/category/id=60500148"> <span class="text">View Now</span> 
+ <span class="iconBg"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                "> <div class="image-container layout-a" style="background-image: url('https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/34_illustration.jpg');"><img src="https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/34_illustration-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class="">Dimensions</p> 
+</div> 
+ <p></p> 
+ <ul class="rteBlock defaultList"> <li>Sandard Length: 107cm x 188cm</li> 
+ <li>Extra Length: 107cm x 200cm</li> 
+</ul> 
+ <p></p> 
+</div> 
+ <div class="btn-container "> <a class="dmWidget button-class" value="store/#!/~/category/id=60486212" label="" type="product" href="index.html#!/~/category/id=60486212" raw_url="/site/4a53ae05/store/?nee=true&ed=true&showOriginal=true&preview=true&dm_try_mode=true&dm_checkSync=1#!/~/category/id=60486212"> <span class="text">View Now</span> 
+ <span class="iconBg"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                "> <div class="image-container layout-a" style="background-image: url('https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/Double_illustration.jpg');"><img src="https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/Double_illustration-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class="">Dimensions</p> 
+</div> 
+ <p></p> 
+ <ul class="rteBlock defaultList"> <li>Sandard Length: 137cm x 188cm</li> 
+ <li>Extra Length: 137cm x 200cm</li> 
+</ul> 
+ <p></p> 
+</div> 
+ <div class="btn-container "> <a class="dmWidget button-class" value="store/#!/~/category/id=60499155" label="" type="product" href="index.html#!/~/category/id=60499155" raw_url="/site/4a53ae05/store/?nee=true&ed=true&showOriginal=true&preview=true&dm_try_mode=true&dm_checkSync=1#!/~/category/id=60499155"> <span class="text">View Now</span> 
+ <span class="iconBg"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                "> <div class="image-container layout-a" style="background-image: url('https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/Queen_illustration.jpg');"><img src="https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/Queen_illustration-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class="">Dimensions</p> 
+</div> 
+ <p></p> 
+ <ul class="rteBlock defaultList"> <li>Sandard Length: 152cm x 188cm</li> 
+ <li>Extra Length: 152cm x 200cm</li> 
+</ul> 
+ <p></p> 
+</div> 
+ <div class="btn-container "> <a class="dmWidget button-class" value="store/#!/~/category/id=60500149" label="" type="product" href="index.html#!/~/category/id=60500149" raw_url="/site/4a53ae05/store/?nee=true&ed=true&showOriginal=true&preview=true&dm_try_mode=true&dm_checkSync=1#!/~/category/id=60500149"> <span class="text">View Now</span> 
+ <span class="iconBg"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+ <div class="tab layout-a  
+                "> <div class="image-container layout-a" style="background-image: url('https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/King_illustration.jpg');"><img src="https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/King_illustration-1920w.jpg" alt="" class="image" onerror="handleImageLoadError(this)"/></div> 
+ <div class="tab-space"></div> 
+ <div class="tab-text-container"> <div class="tab-description"> <div class="desc-title"> <p class="">Dimensions</p> 
+</div> 
+ <p></p> 
+ <ul class="rteBlock defaultList"> <li>Sandard Length: 182cm x 188cm</li> 
+ <li>Extra Length: 182cm x 200cm</li> 
+</ul> 
+ <p></p> 
+</div> 
+ <div class="btn-container "> <a class="dmWidget button-class" value="store/#!/~/category/id=60499156" label="" type="product" href="index.html#!/~/category/id=60499156" raw_url="/site/4a53ae05/store/?nee=true&ed=true&showOriginal=true&preview=true&dm_try_mode=true&dm_checkSync=1#!/~/category/id=60499156"> <span class="text">View Now</span> 
+ <span class="iconBg"></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1124575650 dmRespRow fullBleedChanged fullBleedMode" id="1124575650"> <div class="dmRespColsWrapper" id="1906299311"> <div class="dmRespCol large-6 medium-6 small-12" id="1001083489"> <div class="u_1581964913 imageWidget align-center" editablewidget="true" data-element-type="image" data-widget-type="image" id="1581964913"> <a id="1861149995"><img src="https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/5acc770e2bc10-1440w.png" alt="" id="1280761816" class="" data-dm-image-path="https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/5acc770e2bc10.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1118011092 dmNewParagraph" data-dmtmpl="true" data-element-type="paragraph" data-version="5" id="1118011092" style="transition: opacity 1s ease-in-out 0s;" data-uialign="right"><p class="size-48 m-size-34 text-align-center"><span style="display: initial; font-family: 'Playfair Display'; font-weight: 700;" class="font-size-48 m-font-size-34">Factory Prices</span></p></div> 
+ <div class="u_1771970270 dmNewParagraph" data-dmtmpl="true" data-element-type="paragraph" data-version="5" id="1771970270" style="transition: opacity 1s ease-in-out 0s;" data-uialign="center"><p class="text-align-center size-18 m-size-18"><span class="font-size-18 m-font-size-18" style="font-weight: 600; font-family: 'Open Sans'; display: initial;" m-font-size-set="true">We bring you The Best Prices in South Africa on All Beds, Headboards &amp; Home Accessories for you to make your House a Home again, without breaking the bank.</span></p></div> 
+</div> 
+ <div class="dmRespCol large-6 medium-6 small-12" id="1407995045"> <div class="u_1200501292 imageWidget align-center" editablewidget="true" data-element-type="image" data-widget-type="image" id="1200501292"> <a id="1578636608"><img src="https://lirp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/opt/made-in-south-africa-round-label-vector-31629010-removebg-preview-1440w.png" alt="" id="1429857830" class="" data-dm-image-path="https://irp-cdn.multiscreensite.com/4a53ae05/dms3rep/multi/made-in-south-africa-round-label-vector-31629010-removebg-preview.png" onerror="handleImageLoadError(this)"/></a> 
+</div> 
+ <div class="u_1659273027 dmNewParagraph" data-dmtmpl="true" data-element-type="paragraph" data-version="5" id="1659273027" style="transition: none 0s ease 0s; text-align: left; display: block;" data-uialign="left"><p class="text-align-center m-size-31 size-44"><span class="font-size-44 m-font-size-31" style="font-weight: 700; font-family: 'Playfair Display'; display: initial;">Locally Manufactured</span></p></div> 
+ <div class="u_1233582630 dmNewParagraph" data-dmtmpl="true" data-element-type="paragraph" data-version="5" id="1233582630" style="transition: opacity 1s ease-in-out 0s;" data-uialign="center"><p class="m-size-18 text-align-center size-18"><span class="m-font-size-18 font-size-18" m-font-size-set="true" style="font-weight: 600; font-family: 'Open Sans'; display: initial;">We partner with the Top Manufacturers in South Africa to handcraft each of our products to ensure you get the Best Quality at Affordable Prices.</span><span single-space="true" class="m-font-size-18 font-size-18" style="font-weight: 600; display: initial; font-family: " open="" sans";"=""> <span class="m-font-size-18 font-size-18" style="font-weight: 600; display: initial; font-family: 'Open Sans';"></span> 
+</span></p></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1678698512 dmRespRow dmSectionParallaxNew hasBackgroundOverlay fullBleedChanged fullBleedMode" style="text-align: center;" id="1678698512"> <div class="dmRespColsWrapper" id="1452485559"> <div class="u_1970994939 dmRespCol small-12 large-2 medium-2" id="1970994939"> <div class="u_1063503434 dmSpacer" id="1063503434" data-element-type="spacer"></div> 
+</div> 
+ <div class="u_1476057532 dmRespCol small-12 large-8 medium-8" id="1476057532"> <h3 class="u_1738829313 dmNewParagraph" id="1738829313" data-uialign="center" data-element-type="paragraph" style="transition: none 0s ease 0s; display: block;"><div style="text-align: center;"><font style="color: rgb(255, 255, 255);"><i style="" class="m-font-size-36 lh-1 font-size-48"><span style="font-weight: 700; font-family: 'Playfair Display';" class="m-font-size-36 lh-1 font-size-72">Comfort For The Whole Family</span></i></font></div></h3> <div class="u_1339778186 dmDividerWrapper clearfix" data-element-type="dDividerId" data-layout="divider-style-1" data-widget-version="2" id="1339778186"><hr class="dmDivider" style="border-width:2px; border-top-style:solid; color:grey;" id="1838341445"/></div> 
+ <div class="dmNewParagraph" data-dmtmpl="true" data-element-type="paragraph" data-version="5" id="1872446542" style="transition: opacity 1s ease-in-out 0s;" data-uialign="center"><p class="text-align-center size-30 m-size-21"><span style="display: initial; font-family: 'Playfair Display'; font-weight: 700; font-style: italic; color: rgb(255, 255, 255);" class="font-size-30 m-font-size-21">Because You Deserve It</span></p></div> 
+</div> 
+ <div class="u_1226060983 dmRespCol small-12 large-2 medium-2" id="1226060983"> <div class="u_1164874227 dmSpacer" id="1164874227" data-element-type="spacer"></div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1435141028 dmRespRow hasBackgroundOverlay dmSectionParallaxNew fullBleedChanged fullBleedMode" style="text-align: center;" id="1435141028" mode="1"> <div class="dmRespColsWrapper" id="1864088259"> <div class="dmRespCol u_1867297420 small-12 medium-12 large-12" id="1867297420"> <h2 class="u_1135286397 dmNewParagraph" id="1135286397" data-uialign="center" data-element-type="paragraph" style="transition: none; display: block;"><div style="text-align: center;"><font color="#ffffff"><b style="" class="lh-1 m-font-size-36 font-size-48"><span style="font-weight: 900;" class="m-font-size-36 lh-1 font-size-60"></span></b></font></div><span style="font-weight: 400;" class="m-font-size-36 lh-1 font-size-48"><i style=""><div style="text-align: center;"><font color="#ffffff" style=""><b style="" class="lh-1 m-font-size-36"><span style="font-weight: 900; font-family: 'Playfair Display';" class="m-font-size-36 lh-1 font-size-60">Sign Up Today</span> 
+ <span style="font-family: 'Playfair Display';">and stand a chance to</span> 
+ <span style="font-family: 'Playfair Display'; font-weight: 900;" class="m-font-size-36 lh-1 font-size-60">WIN</span> 
+ <span style="font-family: 'Playfair Display';">a</span></b></font></div><div style="text-align: center;"><font color="#ffffff" style=""><b style="" class="lh-1 m-font-size-36"><span style="font-weight: 900; font-family: 'Playfair Display';" class="m-font-size-36 lh-1 font-size-60">Double Ortho Knit Base &amp; Mattress</span></b></font></div></i></span><div style="text-align: center;"><font color="#ffffff"><b style="" class="lh-1 m-font-size-36 font-size-48"><span style="font-weight: 900;" class="m-font-size-36 lh-1 font-size-60"></span></b></font></div></h2> <div class="u_1552723084 dmform default" preserve_css="true" id="1552723084" data-layout="layout-1" data-element-type="dContactUsRespId"> <h3 class="dmform-title dmwidget-title" id="1013118835" hide="true">Sign up to our newsletter</h3> 
+ <div class="dmform-wrapper" preserve_css="true" id="1175452703" captcha-lang="en"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1032633867"> <div class="dmforminput  small-12 dmRespDesignCol required medium-12 large-12" id="1099303910"> <label for="dmform-0" id="1714268276" class="">Name</label> 
+<input type="text" class="" name="dmform-0" id="1020716141"/><input type="hidden" name="label-dmform-0" id="1737695758" class="" value="Name"/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol medium-12 large-12 required" id="1865860917"> <label for="dmform-4" id="1385280314" class="">Last Name</label> 
+<input type="text" name="dmform-4" id="1061338408" class=""/><input type="hidden" name="label-dmform-4" id="1860607768" class="" value="Last Name"/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol medium-12 large-12 required" id="1277965349"> <label for="dmform-5" id="1753290249" class="">Contact Number</label> 
+<input type="text" name="dmform-5" id="1159878621" class=""/><input type="hidden" name="label-dmform-5" id="1494612296" class="" value="Contact Number"/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol required medium-12 large-12" id="1521745894"> <label for="dmform-3" id="1064552855" class="">Email Address</label> 
+<input type="email" name="dmform-3" id="1830289773" class=""/><input type="hidden" name="label-dmform-3" id="1033779173" class="" value="Email Address"/></div> 
+ <span id="1258111285" class="dmWidgetClear"></span> 
+ <span id="1543774900" class="dmWidgetClear"></span> 
+ <div class="dmformsubmit dmWidget R" preserve_css="true" id="1750394342"><input class="" name="submit" type="submit" value="Submit" id="1729756180"/></div> 
+<input name="dmformsendto" type="hidden" preserve_css="true" id="1588267771" class="" value="O0wrseIfFLuOtG3Hwxc6KH8dPLogB8ll/llUKVVK6WJtsZUOArEHSv2HGz6vfqBkSz3tEJrS6T2VgsyPiccSeQ==" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1640772185"/><input name="dmformsubject" type="hidden" value="Competition Form" preserve_css="true" id="1234829720" class=""/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" preserve_css="true" id="1908743455"><p class="rteBlock">Thank you for submiting to our Spring Promotion. If you aren't this months winner, don't give up, as we have a contest every month for you to stand a chance to win. Continue shopping for the best prices in South Africa.</p></div> 
+ <div class="dmform-error" style="display:none" preserve_css="true" id="1714595580">Oops, there was an error sending your message.<br id="1130133612"/>Please try again later</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="dmFooterContainer"> <div id="fcontainer" class="u_fcontainer f_hcontainer dmFooter p_hfcontainer"> <div dm:templateorder="250" class="dmFooterResp generalFooter" id="1943048428"> <div class="u_1565581250 dmRespRow fullBleedChanged fullBleedMode mobile-columns-reversed" style="text-align: center;" id="1565581250"> <div class="dmRespColsWrapper" id="1762410580"> <div class="u_1846743694 dmRespCol small-12 medium-6 large-6" id="1846743694"> <span id="1087246143"></span> 
+ <div class="u_1238974907 default dmDefaultGradient align-center hasFullWidth inlineMap" data-type="inlineMap" data-lat="-33.8646" data-lng="18.51058" data-address="2 Longclaw Dr, Milnerton, South Africa" data-height="" data-msid="" data-mapurl="" data-lang="en" data-color-scheme="" data-zoom="13" data-layout="layout4" data-popup-display="" data-popup-show="false" data-popup-title="" data-popup-title-visible="false" data-popup-description="" data-popup-description-visible="false" id="1238974907" dmle_extension="mapextension" data-element-type="mapextension" modedesktop="map" modemobile="map" addresstodisplay="2 Longclaw Dr, Milnerton, South Africa" geocompleteaddress="2 Longclaw Dr, Milnerton, South Africa" data-popup-display-desktop="" data-popup-display-mobile="" data-display-type="block" layout="layout4" modetablet="map" wr="true" icon="true" surround="true" description="Find Us" adwords="" icon-name="icon-map-marker" street="" city="" country="US" country_full="United States" state="" zip="" business="BFH Furniture" provider="mapbox" lon="18.51058" lat="-33.8646" zoom="13" dmmapsource="dm"> <div class="mapContainer" style="height: 100%; width: 100%; overflow: hidden; z-index: 0;"></div> 
+</div> 
+</div> 
+ <div class="dmRespCol small-12 medium-6 large-6 u_1085585054" id="1085585054"> <span id="1155575799"></span> 
+ <div class="u_1162454202 dmNewParagraph" data-dmtmpl="true" data-element-type="paragraph" data-version="5" id="1162454202" style="transition: opacity 1s ease-in-out 0s;" data-uialign="left"><p class="text-align-left size-38 m-size-27"><span style="display: initial; font-family: 'Playfair Display'; font-weight: 700; font-style: italic;" class="font-size-38 m-font-size-27">Get In Touch With Our Sales Team</span></p></div> 
+ <div class="dmNewParagraph" data-dmtmpl="true" data-element-type="paragraph" data-version="5" id="1969912615" style="transition: opacity 1s ease-in-out 0s;"><p class="size-18 m-size-13"><span style="display: initial; font-family: 'Open Sans'; font-weight: 600;" class="font-size-18 m-font-size-13">Fill in the form and someone will contact you in the next 24 hours</span></p></div> 
+ <div class="u_1455785290 dmform default" preserve_css="true" id="1455785290" data-layout="layout-3" data-element-type="dContactUsRespId"> <h3 class="dmform-title dmwidget-title" id="1825933187" hide="true">Contact Us</h3> 
+ <div class="dmform-wrapper" preserve_css="true" id="1948967833" captcha-lang="en"> <form method="post" class="dmRespDesignRow" locale="ENGLISH" id="1961377584"> <div class="dmforminput required  small-12 dmRespDesignCol medium-6 large-6" id="1683924578"> <label for="dmform-0" id="1515377230">Name:</label> 
+<input type="text" class="" name="dmform-0" id="1893076139"/><input type="hidden" name="label-dmform-0" value="Name" id="1488722147"/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol medium-6 large-6" id="1739142645"> <label for="dmform-3" id="1179577934">Phone</label> 
+<input type="text" name="dmform-3" id="1044049347"/><input type="hidden" name="label-dmform-3" value="Phone" id="1864818584" class=""/></div> 
+ <div class="dmforminput required  small-12 dmRespDesignCol medium-12 large-12" id="1796638272"> <label for="dmform-1" id="1206414337">Email:</label> 
+<input type="email" class="" name="dmform-1" id="1140318005"/><input type="hidden" name="label-dmform-1" value="Email" id="1949118840"/></div> 
+ <div class="dmforminput small-12 dmRespDesignCol medium-12 large-12" id="1148135209"> <label for="dmform-2" id="1463902794">Message</label> 
+<input type="text" name="dmform-2" id="1005102394"/><input type="hidden" name="label-dmform-2" value="Message" id="1549540030" class=""/></div> 
+ <span id="1629513113" class="dmWidgetClear"></span> 
+ <div class="dmformsubmit dmWidget R" preserve_css="true" id="1804606842"><input class="" name="submit" type="submit" value="Submit" id="1738522818"/></div> 
+<input name="dmformsendto" type="hidden" value="O0wrseIfFLuOtG3Hwxc6KH8dPLogB8ll/llUKVVK6WJtsZUOArEHSv2HGz6vfqBkSz3tEJrS6T2VgsyPiccSeQ==" preserve_css="true" id="1074033812" class="" data-dec="true"/><input class="dmActionInput" type="hidden" name="action" value="/_dm/s/rt/widgets/dmform.submit.jsp" id="1781456373"/><input name="dmformsubject" type="hidden" value="Contact Form" preserve_css="true" id="1754133732" class=""/></form> 
+</div> 
+ <div class="dmform-success" style="display:none" preserve_css="true" id="1007517288">Thank you for contacting us.<br id="1964225001"/>We will get back to you as soon as possible</div> 
+ <div class="dmform-error" style="display:none" preserve_css="true" id="1364094605">Oops, there was an error sending your message.<br id="1116473767"/>Please try again later</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div class="u_1725049324 dmRespRow fullBleedChanged fullBleedMode" style="text-align: center;" id="1725049324"> <div class="dmRespColsWrapper" id="1358086068"> <div class="dmRespCol small-12 medium-4 large-4" id="1233943780"> <div class="dmNewParagraph" data-dmtmpl="true" data-element-type="paragraph" data-version="5" id="1605311665" style="transition: opacity 1s ease-in-out 0s;" data-uialign="center"><p class="text-align-center size-18 m-size-18"><span class="font-size-18 m-font-size-18" style="color: rgb(255, 255, 255); display: initial;"><span class="font-size-18 m-font-size-18" style="color: rgb(255, 255, 255); display: initial;" m-font-size-set="true">2 Longclaw Drive</span> 
+</span></p><p class="text-align-center size-18 m-size-18"><span class="font-size-18 m-font-size-18" style="color: rgb(255, 255, 255); display: initial;" m-font-size-set="true">Montague Garden</span></p><p class="text-align-center size-18 m-size-18"><span class="font-size-18 m-font-size-18" style="color: rgb(255, 255, 255); display: initial;" m-font-size-set="true">Western Cape</span></p><p class="text-align-center size-18 m-size-18"><span class="font-size-18 m-font-size-18" style="color: rgb(255, 255, 255); display: initial;" m-font-size-set="true">7441</span></p></div> 
+</div> 
+ <div class="dmRespCol small-12 medium-4 large-4" id="1830246780"> <h4 class="u_1112815771 dmNewParagraph" id="1112815771" data-uialign="center" data-element-type="paragraph"><div style="text-align: center;"><font color="#ffffff"><b><span style="font-weight: 700;" class="font-size-18 lh-1">Contact Us</span></b></font></div></h4> <h4 class="u_1481728146 dmNewParagraph" id="1481728146" style="display: block; transition: none 0s ease 0s;" data-uialign="center" data-element-type="paragraph"><div style="text-align: center;"><span style="color: rgb(255, 255, 255);" class="font-size-18 lh-1 m-specific m-font-size-18">+27 01 852 3328</span></div><div style="text-align: center;"><span style="color: rgb(255, 255, 255);" class="font-size-18 lh-1 m-specific m-font-size-18">support@bfhfurniture.co.za</span><br/></div></h4></div> 
+ <div class="dmRespCol small-12 medium-4 large-4" id="1266366206"> <div class="u_1689717092 align-center text-align-center dmSocialHub" id="1689717092" dmle_extension="social_hub" data-element-type="social_hub" wr="true" networks="" icon="true" surround="true" adwords=""> <div class="socialHubWrapper"> <div class="socialHubInnerDiv "> <a href="https://www.facebook.com/BFHFurniture/" target="_blank" dmle_dont_remove="target" dm_dont_rewrite_url="true"> <span class="dmSocialFacebook dm-social-icons-facebook oneIcon socialHubIcon style6" data-hover-effect=""></span> 
+</a> 
+ <a href="https://instagram.com/bfhfurniture/" target="_blank" dmle_dont_remove="target" dm_dont_rewrite_url="true"> <span class="dmSocialInstagram dm-social-icons-instagram oneIcon socialHubIcon style6" data-hover-effect=""></span> 
+</a> 
+ <a href="https://pinterest.com/bhewitt2610/" target="_blank" dmle_dont_remove="target" dm_dont_rewrite_url="true"> <span class="dmSocialPinterest icon-pinterest oneIcon socialHubIcon style6" data-hover-effect=""></span> 
+</a> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+ <div id="1236746004" dmle_extension="powered_by" data-element-type="powered_by" icon="true" surround="false" data-dmtmpl="true"></div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+            </div>
+        </div>
+<!--  Add full CSS and Javascript before the close tag of the body if needed -->
+<script type="text/javascript" id="d_track_campaign">
+(function() {
+ 	var campaign = (/utm_campaign=([^&]*)/).exec(window.location.search);
+
+ 	if (campaign && campaign != null && campaign.length > 1) {
+ 		campaign = campaign[1];
+ 		document.cookie = "_dm_rt_campaign=" + campaign + ";expires=" + new Date().getTime() + 24*60*60*1000 + ";domain=" + window.location.hostname + ";path=/";
+ 	}
+}());
+</script>
+<script type="text/javascript" >
+  var _dm_gaq = {};
+  var _gaq = _gaq || [];
+  var _dm_insite = [];
+</script>
+
+  <script type="text/javascript" id="d_track_ga">
+
+  _dm_gaq.siteAlias = '4a53ae05';
+  _dm_gaq.systemAggregatedGaqID = 'UA-7265702-9';
+  _dm_gaq.externalGaqID = '';
+  
+  _gaq.push(['_gat._forceSSL']);
+  
+  _gaq.push (['_gat._anonymizeIp']);
+  
+
+  if(_dm_gaq.systemAggregatedGaqID && (_dm_gaq.systemAggregatedGaqID != _dm_gaq.systemGaqID)){
+     // track aggregated account
+    _gaq.push(['b._setAccount', _dm_gaq.systemAggregatedGaqID]);
+    _gaq.push(['b._setAllowLinker', true]);
+    _gaq.push(['b._setVar', _dm_gaq.siteAlias]);
+    _gaq.push(['b._setCustomVar', 1, 'product', 'DM_DIRECT',  2 ]);
+    _gaq.push(['b._setCustomVar', 2, 'plan', 'BUSINESS_PLUS_ECOMMERCE_LARGE',  2 ]);
+    _gaq.push(['b._setCustomVar', 3, 'dfooter', 'false',  2 ]);
+    _gaq.push(['b._setCustomVar', 4, 'sitetype', '1',  2 ]);
+    _gaq.push(['b._setCustomVar', 5, 'pwaEnabled', 'true',  2 ]);
+
+      _gaq.push(['b._trackPageview' ]);
+    pushInsiteImpressions('b._trackEvent');
+   }
+
+   if(_dm_gaq.externalGaqID && _dm_gaq.externalGaqID!= '') {
+     _gaq.push(['c._setAccount', _dm_gaq.externalGaqID]);
+     _gaq.push(['c._setVar', _dm_gaq.siteAlias]);
+     _gaq.push(['c._setDomainName', 'bfhfurniture.co.za']);
+     _gaq.push(['c._setAllowLinker', true]);
+     _gaq.push(['c._trackPageview' ]);
+
+     pushInsiteImpressions('c._trackEvent');
+   }
+
+   function pushInsiteImpressions(category) {
+   	$.each(_dm_insite, function(idx, rule) {
+   		_gaq.push([ category, 'insite_impression' , _dm_gaq.siteAlias, rule.ruleType + '__' + rule.ruleId, ]);
+   	});
+   }
+(function() {
+	var ga = document.createElement('script');
+	ga.type = 'text/javascript';
+	ga.async = true;
+  
+	ga.src = 'https://ssl.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(ga, s);
+})();
+
+  </script>
+<script type="text/javascript" id="d_track_sp">
+;(function(p,l,o,w,i,n,g){if(!p[i]){p.GlobalSnowplowNamespace=p.GlobalSnowplowNamespace||[];
+p.GlobalSnowplowNamespace.push(i);p[i]=function(){(p[i].q=p[i].q||[]).push(arguments)
+};p[i].q=p[i].q||[];n=l.createElement(o);g=l.getElementsByTagName(o)[0];n.async=1;
+n.src=w;g.parentNode.insertBefore(n,g)}}(window,document,"script","//d32hwlnfiv2gyn.cloudfront.net/sp-2.0.0-dm-0.1.min.js","snowplow"));
+window.dmsnowplow  = window.snowplow;
+
+dmsnowplow('newTracker', 'cf', 'd32hwlnfiv2gyn.cloudfront.net', { // Initialise a tracker
+  appId: '4a53ae05'
+});
+
+dmsnowplow('trackPageView')
+$.each(_dm_insite, function(idx, rule) {
+	//('trackStructEvent', 'category','action','label','property','value');
+			// Specifically in popup only the client knows if it is shown or not so we don't always want to track its impression here
+	        // the tracking is in popup.js
+			if (rule.actionName !== "popup") {
+                dmsnowplow('trackStructEvent', 'insite', 'impression', rule.ruleType, rule.ruleId);
+            }
+ 			$(document).ready(function(){
+ 				$.DM.events.trigger('event-ruleTriggered', {value: rule})}
+ 			);
+ 		});
+</script>
+   <div style="display:none;" id="P6iryBW0Wu"></div>
+
+<!-- photoswipe markup -->
+
+
+
+
+
+
+
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<div id="fb-root"
+        data-locale="en"></div>
+<!-- Alias: 4a53ae05 -->
+<div class="dmPopupMask" id="dmPopupMask"></div>
+<div id="dmPopup" class="dmPopup">
+	<div class="dmPopupCloseWrapper"> <div class="dmPopupClose dm-common-icons-close oneIcon" onclick="dmHidePopup(event);"></div> </div>
+ 	<div class="dmPopupTitle"> <span></span> Share by:</div> 
+	<div class="data"></div>
+</div><script id="d_track_personalization">
+// Collects client data and updates cookies used by smart sites
+var expireDays = 365,visitLength = 30 * 60000;
+$.setCookie("dm_timezone_offset", (new Date()).getTimezoneOffset(), expireDays);
+function setSmartSiteCookies() {
+	setSmartSiteCookiesInternal("dm_this_page_view","dm_last_page_view","dm_total_visits","dm_last_visit");
+}
+$.DM.events.on("afterAjax", setSmartSiteCookies);
+setSmartSiteCookies();
+</script>
+<script type="text/javascript">
+    
+    Parameters.NavigationAreaParams.MoreButtonText = 'MORE';
+    
+    Parameters.NavigationAreaParams.LessButtonText = 'LESS';
+    Parameters.HomeLinkText = 'Home';
+    </script>
+
+<script>
+
+    jQuery(window).load(function () {
+        try {
+            jQuery.DM.updateIOSHeight();
+        } catch (e) {
+        }
+        ;
+    });
+</script>
+<script>
+    dmAPI.loadScript(window.rtCommonProps['common.resources.cdn.host'] + '/libs/lozad/1.15.0/lozad.min.js', function () {
+        dmAPI.runOnReady('lozadInit', function () {
+            window.document.querySelectorAll('img.lazy').forEach(function (img) {
+                img.addEventListener('load', function (event) {
+                    var img = event.target;
+                    img.style.filter = 'blur(0)';
+                    setTimeout(function () {
+                        $(img).closest('.imageWidget').addClass('lazyLoaded');
+                    }, 250)
+                });
+            });
+            lozad('.lazy', {
+                threshold: 0.1,
+                loaded: function (element) {
+                    if (element.getAttribute('data-background-image')) {
+                        element.style.setProperty(
+                            'background-image',
+                            "url('" + element.getAttribute('data-background-image') + "')",
+                            "important"
+                        );
+                    }
+                }
+            }).observe();
+        });
+    });
+</script>
+<!--  End Script tags -->
+
+<!--  Begin Body End Markup -->
+<script>
+ for (let el of document.querySelectorAll('.banner')) el.style.visibility = 'hidden';
+</script>
+
+
+<script>
+ for (let el of document.querySelectorAll('.product-details__product-attributes')) el.style.visibility = 'hidden';
+</script>
+<!--  End Body End Markup -->
+
+<!--  Site Wide Html Markup -->
+            <!--  Site Wide Html Markup -->
+</body>
+</html>
